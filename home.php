@@ -8,7 +8,7 @@
     <p>Slider</p>
   </div>
   <p id="mission">
-    Mission statement here. This sentence has a <a href="#">link in it</a>. 
+    Mission statement here. <a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipiscing elit. Nulla vitae ante risus. Duis vitae feugiat dolor. Etiam dignissim adipiscing libero, non lobortis mauris rutrum id. Nulla fringilla, <a href="#">nunc at feugiat faucibus</a>, velit enim porta libero, sit amet luctus quam leo et nulla.
   </p>
 </section>
 

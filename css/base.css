@@ -97,15 +97,52 @@ body {
 }
 
 #header {
-  margin: 0px auto 2em;
+  margin: 0px auto;
+  position: relative;
 }
 
+  #header #logo {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 90px;
+    border: 1px solid #ffffff;
+  }
+
+  #header #subscribe {
+    float: right;   
+  }
+
+  #header .horiz-menu li {
+    display: inline;
+  }
+
+  #header #social-menu {
+    border-left: 1px solid #000000;
+    float: right;
+  }
+
+  #header #primary-menu {
+    float: left;
+    margin-left: 3em;
+    margin-top: 2em;
+  }
+
+    #primary-menu a:hover {
+      background-color: #ffffff;
+    }
+
+    #header .donate {
+      float: right;
+      margin-top: 2em;
+    }
+
 #footer {
-  background-color: #43311d;
   overflow: hidden;
   padding-top: 2em;
   padding-bottom: 1em;
   color: #ffffff;
+  background-color: #43311d;
   font-family: sans-serif;
 }
 
@@ -135,7 +172,6 @@ body {
       content: '<';
       padding-right: .25em;
     }
-
   
 #home-primary {
   width: 72%;
@@ -143,6 +179,7 @@ body {
   clear: left;
   float: left;
   margin-left: 3%;
+  margin-top: 2em;
 }
 
   #home-primary #slider {
@@ -156,6 +193,7 @@ body {
   width: 22%;
   float: left;
   margin-right: 3%;
+  margin-top: 2em;
 }
 
 #home-buckets {

@@ -24,19 +24,29 @@
 <body class="<?php echo $body_class; ?>">
   <div id="content">
     <div id="header">
-      <form id="subscribe" action="#" method="post">
-        <input type="email" placeholder="email address" />
-        <input type="submit" value="Subscribe" />
-      </form>
+      <a id="logo" href="#"><h1>Light of Hope</h1></a>
 
       <nav id="social-menu">
-        <ul>
+        <ul class="horiz-menu">
           <li><a id="social-facebook" href="http://www.facebook.com/pages/Light-of-Hope-Childrens-Home-and-School/166344674228?sk=info">Facebook</a></li>
           <li><a id="social-twitter" href="#">Twitter</a></li>
         </ul>
       </nav>
 
-      <nav id="primary-menu"></nav>
+      <form id="subscribe" action="#" method="post">
+        <input type="email" placeholder="email address" />
+        <input type="submit" value="Subscribe" />
+      </form>
+
+      <nav id="primary-menu">
+        <ul class="horiz-menu">
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+          <li><a href="#">Menu Item 4</a></li>
+          <li><a href="#">Menu Item 5</a></li>
+        </ul>
+      </nav>
       <a class="donate" href="#">Donate</a>
     </div> <!-- #header -->
 <!-- end: header --> 

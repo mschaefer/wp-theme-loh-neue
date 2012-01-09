@@ -1,3 +1,13 @@
+/*
+  Palette
+
+  background blue: #c3d8e9
+  home bucket brown: #573c1f
+  footer brown: #43311d
+  donate red: #b51a16
+
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,3 +56,90 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* LOH Neue */
+a.donate {
+  background-color: #b51a16;
+  padding: .25em;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#content {
+  width: 960px;
+  padding-top: 20px;
+  margin: 0px auto;
+  background-color: #c3d8e9;
+}
+
+#header, #footer, #home-buckets {
+  width: 94%;
+  clear: both;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#header {
+  margin: 0px auto 2em;
+}
+
+#footer {
+  background-color: #43311d;
+}
+
+#home-primary {
+  width: 72%;
+  min-height: 350px;
+  clear: left;
+  float: left;
+  margin-left: 3%;
+}
+
+  #home-primary #slider {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
+
+#home-feed {
+  width: 22%;
+  float: left;
+  margin-right: 3%;
+}
+
+#home-buckets {
+  min-height: 150px;
+  padding-top: 2em;
+  background-color: #573c1f;
+}
+
+  #home-buckets .home-bucket {
+    float: left;
+    width: 33.333333333%;
+  }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+} /* media query: 1024 */
+
+@media screen and (max-width: 960px) {
+  #content {
+    width: 100%;
+  }
+} /* media query: 960 */
+
+@media screen and (max-width: 768px) {
+} /* media query: 768 */
+
+@media screen and (max-width: 480px) {
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */
+
+/* 1200px and up */
+@media screen and (min-width: 1200px) {
+} /* media query: 1200*/

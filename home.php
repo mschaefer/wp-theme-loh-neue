@@ -3,7 +3,7 @@
 
   get_header(); 
 ?>
-<section>
+<section id="home-primary">
   <div id="home-slider">
     Slider
   </div>

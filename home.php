@@ -5,10 +5,10 @@
 ?>
 <section id="home-primary">
   <div id="home-slider">
-    Slider
+    <p>Slider</p>
   </div>
   <p id="mission">
-    Mission statement here
+    Mission statement here. This sentence has a <a href="#">link in it</a>. 
   </p>
 </section>
 

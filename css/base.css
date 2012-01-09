@@ -3,6 +3,7 @@
 
   background blue: #c3d8e9
   home bucket brown: #573c1f
+  link blue: #195091
   footer brown: #43311d
   donate red: #b51a16
 
@@ -58,6 +59,19 @@ table {
 }
 
 /* LOH Neue */
+p, li {
+  line-height: 1.5em;
+}
+
+a {
+  color: #195091;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
 a.donate {
   background-color: #b51a16;
   padding: .25em;
@@ -88,8 +102,41 @@ body {
 
 #footer {
   background-color: #43311d;
+  overflow: hidden;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  color: #ffffff;
+  font-family: sans-serif;
 }
 
+  #footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+    #footer a:hover {
+      text-decoration: underline;
+    }
+
+  #footer .link-group {
+    float: left;
+    padding-right: 2em;
+  }
+
+    #footer .link-group h1 {
+      text-transform: uppercase;
+    }
+
+    #footer .link-group li {
+      margin-left: 1em;
+    }
+ 
+    #footer .link-group li a:before {
+      content: '<';
+      padding-right: .25em;
+    }
+
+  
 #home-primary {
   width: 72%;
   min-height: 350px;
@@ -99,9 +146,10 @@ body {
 }
 
   #home-primary #slider {
-    display: block;
-    width: 100%;
+    width: 99%;
     height: 350px;
+    border: 1px solid #000000;
+    background-color: gray;
   }
 
 #home-feed {
@@ -113,12 +161,20 @@ body {
 #home-buckets {
   min-height: 150px;
   padding-top: 2em;
+  color: #ffffff;
   background-color: #573c1f;
+  font-family: sans-serif;
 }
 
   #home-buckets .home-bucket {
     float: left;
     width: 33.333333333%;
+  }
+
+  #home-buckets img.bucket-profile {
+    width: 128px;
+    height: 128px;
+    border: 2px solid #ffffff;
   }
 
 /* Media Queries */
@@ -127,7 +183,7 @@ body {
 
 @media screen and (max-width: 960px) {
   #content {
-    width: 100%;
+    width: 100%; /* this should happen when the size of the window matches the width of content */
   }
 } /* media query: 960 */
 

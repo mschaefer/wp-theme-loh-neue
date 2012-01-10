@@ -19,29 +19,29 @@
 <aside id="home-buckets">
   <section class="home-bucket">
     <header>
-      <img class="bucket-profile" />
-      <span class="bucket-desc">Bucket Description</span>
-      <h1 class="bucket-name">Bucket Name</h1>
+      <img class="bucket-profile" src="<?php echo get_stylesheet_directory_uri() ?>/css/mock-images/home-profile.png" />
+      <h1 class="bucket-name">Person&rsquo;s Name</h1>
+      <span class="bucket-desc">Sponsor Profile</span>
     </header>
     <p>Bucket content</p>
   </section>
 
   <section class="home-bucket">
     <header>
-      <img class="bucket-profile" />
-      <span class="bucket-desc">Bucket Description</span>
-      <h1 class="bucket-name">Bucket Name</h1>
+      <img class="bucket-profile" src="<?php echo get_stylesheet_directory_uri() ?>/css/mock-images/home-profile.png" />
+      <h1 class="bucket-name">Person&rsquo;s Name</h1>
+      <span class="bucket-desc">Sponsor Profile</span>
     </header>
     <p>Bucket content</p>
   </section>
 
   <section class="home-bucket">
     <header>
-      <img class="bucket-profile" />
-      <span class="bucket-desc">Bucket Description</span>
-      <h1 class="bucket-name">Bucket Name</h1>
+      <img class="bucket-profile" src="<?php echo get_stylesheet_directory_uri() ?>/css/mock-images/home-profile.png" />
+      <h1 class="bucket-name">Person&rsquo;s Name</h1>
+      <span class="bucket-desc">Sponsor Profile</span>
     </header>
-    <p>Bucket content</p>
+    <p>Curabitur venenatis, nisi vel sollicitudin faucibus, elit justo tincidunt diam, sed rhoncus leo est at orci. Vivamus aliquet, enim at interdum suscipit, lectus mauris tristique nunc.</p>
   </section>
 </aside>
 <?php get_footer(); ?>

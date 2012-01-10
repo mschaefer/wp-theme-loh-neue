@@ -9,9 +9,19 @@
   footer brown: #43311d
   donate red: #b51a16
 
+  Font Scale
+  
 */
 
 /* LOH Neue */
+
+/* font-scale from http://webtypography.net/Harmony_and_Counterpoint/Size/3.1.1/ */
+h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
+h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
+h3 { font-size: 1.125em; /* 16x1.125=18 */ }
+h4 { font-size: 0.875em; /* 16x0.875=14 */ }
+p, li  { font-size: 0.75em;  /* 16x0.75=12 */ }
+
 p, li {
   line-height: 1.5em;
 }
@@ -121,6 +131,7 @@ body {
 
     #footer .link-group h1 {
       text-transform: uppercase;
+      font-size: 0.875em;
     }
 
     #footer .link-group li {
@@ -159,7 +170,7 @@ body {
 }
 
 #home-buckets {
-  min-height: 150px;
+  overflow: auto;
   padding-top: 2em;
   color: #ffffff;
   background-color: #573c1f;
@@ -171,10 +182,37 @@ body {
     width: 33.333333333%;
   }
 
-  #home-buckets img.bucket-profile {
-    width: 128px;
-    height: 128px;
-    border: 2px solid #ffffff;
-  }
+    #home-buckets .home-bucket header {
+      height: 55px;
+      position: relative;
+      margin-bottom: 0.5em;
+    }
+
+    #home-buckets .home-bucket header h1 {
+      position: absolute;
+      left: 65px;
+      top: 20px;
+      font-size: 1.125em;
+      font-family: serif;
+    }
+
+    #home-buckets .home-bucket header span {
+      position: absolute;
+      left: 65px;
+      top: 0px;
+      font-size: 0.75em;
+      text-transform: uppercase;
+    }
+
+    #home-buckets img.bucket-profile {
+      display: block;
+      width: 55px;
+      height: 55px;
+      border: 2px solid gray;
+    }
+
+    #home-buckets .home-bucket p {
+      margin-left: 65px;
+    }
 
 @import url(queries.css);

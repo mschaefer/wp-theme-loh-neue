@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
 
 /*
   Palette
@@ -7,10 +8,7 @@
   home bucket brown: #573c1f
   link blue: #195091
   footer brown: #43311d
-  donate red: #b51a16
-
-  Font Scale
-  
+  donate red: #b51a16 
 */
 
 /* LOH Neue */
@@ -44,11 +42,12 @@ a.donate {
   padding: .25em;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: Cantarell, sans-serif;
 }
 
 body {
   background-color: #ffffff;
+  font-family: Georgia, 'Bitstream Charter', serif;
 }
 
 #content {
@@ -112,7 +111,7 @@ body {
   padding-bottom: 1em;
   color: #ffffff;
   background-color: #43311d;
-  font-family: sans-serif;
+  font-family: Cantarell, sans-serif;
 }
 
   #footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
@@ -174,7 +173,7 @@ body {
   padding-top: 2em;
   color: #ffffff;
   background-color: #573c1f;
-  font-family: sans-serif;
+  font-family: Cantarell, sans-serif;
 }
 
   #home-buckets .home-bucket {
@@ -193,7 +192,7 @@ body {
       left: 65px;
       top: 20px;
       font-size: 1.125em;
-      font-family: serif;
+      font-family: Georgia, 'Bitstream Charter', serif;
     }
 
     #home-buckets .home-bucket header span {

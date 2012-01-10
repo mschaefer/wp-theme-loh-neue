@@ -1,0 +1,22 @@
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+} /* media query: 1024 */
+
+@media screen and (max-width: 960px) {
+  #content {
+    width: 100%; /* this should happen when the size of the window matches the width of content */
+  }
+} /* media query: 960 */
+
+@media screen and (max-width: 768px) {
+} /* media query: 768 */
+
+@media screen and (max-width: 480px) {
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */
+
+/* 1200px and up */
+@media screen and (min-width: 1200px) {
+} /* media query: 1200*/

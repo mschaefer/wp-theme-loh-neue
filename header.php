@@ -24,7 +24,7 @@
 <body class="<?php echo $body_class; ?>">
   <div id="content">
     <div id="header">
-      <a id="logo" href="#"><h1>Light of Hope</h1></a>
+      <a id="logo" href="<?php echo home_url(); ?>" title="LOH Home"><h1>Light of Hope</h1></a>
 
       <nav id="social-menu">
         <ul class="horiz-menu">

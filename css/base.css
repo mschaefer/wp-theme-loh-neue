@@ -65,6 +65,7 @@ body {
 }
 
 #header {
+  overflow: auto;
   margin: 0px auto;
   position: relative;
 }
@@ -142,6 +143,20 @@ body {
       padding-right: .25em;
     }
   
+#page-subpages {
+  width: 13.5%;
+  float: left;
+  clear: left;
+  margin: 2em 1.5% auto 3%;
+}
+
+#page-primary {
+  width: 77.5%;
+  float: left;
+  clear: right;
+  margin: 2em 3% auto 1.5%;
+}
+
 #home-primary {
   width: 70.5%;
   clear: left;

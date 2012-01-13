@@ -90,20 +90,6 @@ body {
     border-left: 1px solid #000000;
     float: right;
   }
-    
-    #social-menu a {
-      display: inline-block;
-      height: 16px;
-      width: 16px;
-      text-indent: -9999px;
-      background-image: url(images/social-icons.png);
-      background-repeat: no-repeat;
-    }
-
-      #social-menu a.social-twitter { background-position: 0px 0px; }
-      #social-menu a.social-facebook { background-position: -16px 0px; }
-      #social-menu a.social-youtube { background-position: -32px 0px; }
-      #social-menu a.social-flickr { background-position: -48px 0px; }
 
   #header #primary-menu {
     float: left;

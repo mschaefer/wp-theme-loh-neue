@@ -27,10 +27,7 @@
       <a id="logo" href="<?php echo home_url(); ?>" title="LOH Home"><h1>Light of Hope</h1></a>
 
       <nav id="social-menu">
-        <ul class="horiz-menu">
-          <li><a id="social-facebook" href="http://www.facebook.com/pages/Light-of-Hope-Childrens-Home-and-School/166344674228?sk=info">Facebook</a></li>
-          <li><a id="social-twitter" href="#">Twitter</a></li>
-        </ul>
+        <?php loh_social_menu('horiz-menu'); ?>
       </nav>
 
       <form id="subscribe" action="#" method="post">
@@ -39,13 +36,7 @@
       </form>
 
       <nav id="primary-menu">
-        <ul class="horiz-menu">
-          <li><a href="#">Menu Item 1</a></li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Menu Item 3</a></li>
-          <li><a href="#">Menu Item 4</a></li>
-          <li><a href="#">Menu Item 5</a></li>
-        </ul>
+        <?php loh_primary_menu('horiz-menu'); ?>
       </nav>
       <a class="donate" href="#">Donate</a>
     </div> <!-- #header -->

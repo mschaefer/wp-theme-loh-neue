@@ -87,15 +87,44 @@ body {
   }
 
   #header #social-menu {
-    border-left: 1px solid #000000;
+    height: 2em;
     float: right;
+    border-left: 1px solid #000000;
+    margin-left: 1em;
   }
+
+    #social-menu li {
+      margin-left: .5em;
+    }
+    
+    #social-menu a {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      text-indent: -9999px;
+      background-image: url(images/social-icons.png);
+      background-repeat: no-repeat;
+    }
+
+      #social-menu a.social-twitter { background-position: 0px 0px; }
+      #social-menu a.social-facebook { background-position: -16px 0px; }
+      #social-menu a.social-youtube { background-position: -32px 0px; }
+      #social-menu a.social-flickr { background-position: -48px 0px; }
 
   #header #primary-menu {
     float: left;
-    margin-left: 3em;
+    margin-left: 1.5em;
     margin-top: 2em;
+    font-size: 1.5em;
   }
+
+    #primary-menu li {
+      margin-right: 1em;
+    }
+
+      #primary-menu li:last-child {
+        margin-right; 0px;
+      }
 
     #primary-menu a:hover {
       background-color: #ffffff;

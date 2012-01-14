@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Cantarell);
+/*@import url(http://fonts.googleapis.com/css?family=Cantarell);*/
 
 /*
   Palette
@@ -221,17 +221,37 @@ body {
 }
 
   #home-buckets .home-bucket {
-    float: left;
+    float: left;    
+    position: relative;
     width: 33.333333333%;
+    padding-top: 65px;
   }
 
-    #home-buckets .home-bucket header {
-      height: 55px;
-      position: relative;
-      margin-bottom: 0.5em;
+    #home-buckets .home-bucket > * {
+      margin-left: 65px;
     }
 
-    #home-buckets .home-bucket header h1 {
+    #home-buckets .home-bucket p {
+      margin-left: 135px;
+    }
+
+    #home-buckets .home-bucket p:first-child {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      margin-left: 65px;
+    }
+
+      #home-buckets img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 55px;
+        height: 55px;
+        border: 2px solid gray;
+      }
+
+    #home-buckets .home-bucket h1 {
       position: absolute;
       left: 65px;
       top: 20px;
@@ -239,7 +259,8 @@ body {
       font-family: Georgia, 'Bitstream Charter', serif;
     }
 
-    #home-buckets .home-bucket header span {
+    #home-buckets .home-bucket .bucket-type {
+      display: block;
       position: absolute;
       left: 65px;
       top: 0px;
@@ -247,15 +268,5 @@ body {
       text-transform: uppercase;
     }
 
-    #home-buckets img.bucket-profile {
-      display: block;
-      width: 55px;
-      height: 55px;
-      border: 2px solid gray;
-    }
-
-    #home-buckets .home-bucket p {
-      margin-left: 65px;
-    }
 
 @import url(queries.css);

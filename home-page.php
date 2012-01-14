@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Home Page
+ * Description: the home page template
+ *
+ */
+?>
 <?php 
   $body_class = 'home';
 
@@ -7,9 +14,9 @@
   <div id="home-slider">
     <p>Slider</p>
   </div>
-  <p id="mission">
-    Mission statement here. <a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipiscing elit. Nulla vitae ante risus. Duis vitae feugiat dolor. Etiam dignissim adipiscing libero, non lobortis mauris rutrum id. Nulla fringilla, <a href="#">nunc at feugiat faucibus</a>, velit enim porta libero, sit amet luctus quam leo et nulla.
-  </p>
+	  <?php while ( have_posts() ) : the_post(); ?>
+		  <?php the_content(); ?>
+	  <?php endwhile; // end of the loop. ?>
 </section>
 
 <aside id="home-feed">

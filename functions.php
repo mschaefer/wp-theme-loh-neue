@@ -81,95 +81,66 @@ function loh_primary_menu($ul_class = '') {
 function loh_footer_menu() {
   $defaults = array(
     'theme_location'  => 'footer_nav_menu',
-    'container'       => 'section', 
-    'container_class' => 'link-group', 
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'items_wrap'      => '<ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>',
-    'depth'           => 2, 
+    'container'       => false,
+    'echo'            => false,
+    'items_wrap'      => '%3$s',
     'walker'          => new Loh_Footer_Menu_Walker() );
 
-  wp_nav_menu($defaults);
+  $menu = wp_nav_menu($defaults);
+
+  /* we don't have a reliable way of closing the section at the end via the walker, so add it here */
+  if( strlen($menu) > 0 && preg_match("/<\/section>\Z/", $menu) == 0 ) {
+    $menu .= '</section>';
+  }
+
+ echo $menu;
 }
 
 /*
-      <section class="link-group">
-        <header><h1><a href="#">Link Category</a></h1></header>
-        <ul>
-          <li><a href="#">Link Item</a></li>
-          <li><a href="#">Link Item</a></li>
-          <li><a href="#">Link Item</a></li>
-          <li><a href="#">Link Item</a></li>
-        </ul>
-      </section>
-*/
-
-/*
-  order: 
-
-  start element 0
-  end element 0
-  start level 1
-    start element 1
-    end element 1
-  end level 1
-  start element 0
-  end element 0
-*/
+ * Loh_Footer_Menu_Walker: custom walker to build the footer menu.
+ *
+ */
 class Loh_Footer_Menu_Walker extends Walker_Nav_Menu {
-	function start_lvl(&$output, $depth) {
-		$indent = str_repeat("\t", $depth);
+  var $element_count = 0;
+  
+	function start_lvl(&$out, $depth) {
+		$indent = str_repeat("  ", $depth);
 
     if($depth == 0) {
-      $output .= "\n$indent<section class=\"link-group\">\n";
-    } 
-    else {
-  		$output .= "\n$indent<ul>\n";
+  		$out .= "\n$indent<ul>";
     }
 	}
 
-	function end_lvl(&$output, $depth) {
-		$indent = str_repeat("\t", $depth);
+	function end_lvl(&$out, $depth) {
+		$indent = str_repeat("  ", $depth);
 
-    if($depth == 0) {
-      $output .= "$indent</section>\n";
-    } 
-    else {
-  		$output .= "$indent</ul>\n";
-    }
+    $out .= "\n$indent</ul>";
 	}
 
-	function start_el(&$output, $item, $depth, $args) {
-		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+	function start_el(&$out, $item, $depth, $args) {
+		$indent = ( $depth ) ? str_repeat( "  ", $depth ) : '';
+
+    $attr  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+	  $attr .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+	  $attr .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+	  $attr .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+	  $item_output = '<a'. $attr .'>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
 
     if( $depth == 0) {
-      $output .= "\n<header><h1>";
+      if( $this->element_count > 0 ) {
+        $out .= "</section>";
+      }
+
+      $out .= "\n<section class=\"link-group\"><header><h1>$item_output</h1></header>";
     }
     else {
-  		$output .= $indent . '<li>';
-    }
-
-	  $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-	  $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-	  $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-	  $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-
-	  $item_output = $args->before;
-	  $item_output .= '<a'. $attributes .'>';
-	  $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-	  $item_output .= '</a>';
-	  $item_output .= $args->after;
-
-	  $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-	}
-
-	function end_el(&$output, $item, $depth) {
-    if($depth == 0) {
-      $output .= "</h1></header>\n";
-    }
-    else {
-  		$output .= "</li>\n";
+  		$out .= "\n$indent <li>$item_output</li>";
     }
 	}
-}
+
+  function end_el(&$out, $item, $depth, $args) {
+    $this->element_count++;
+  }
+} // class Loh_Footer_Menu_Walker
 ?>

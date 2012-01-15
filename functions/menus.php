@@ -26,7 +26,11 @@ function loh_menu($ul_class = '', $menu_location = 'primary_nav_menu') {
   $ul = "<ul class=\"$ul_class\">\n";
 
   foreach(loh_menu_items($menu_location) as $item) {
-    $ul .= "<li>" . Loh_Menu_Helper::build_menu_item($item) . "</li>\n";
+    $a = Loh_Menu_Helper::build_menu_item($item);
+
+    $li_class = Loh_Menu_Helper::is_menu_item_for_home($a) ? 'home' : '';
+
+    $ul .= "<li class=\"$li_class\">$a</li>\n";
   }
 
   echo $ul . "</ul>";
@@ -102,6 +106,10 @@ class Loh_Menu_Helper {
 
     return '<a'. $attr .'>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
   }
+
+  public static function is_menu_item_for_home($a) {
+    return preg_match("/title=\"home\"/", $a ) > 0;
+  }
 }
 
 /*
@@ -135,7 +143,9 @@ class Loh_Footer_Menu_Walker extends Walker_Nav_Menu {
         $out .= "</section>";
       }
 
-      $out .= "\n<section class=\"link-group\"><header><h1>$item_output</h1></header>";
+      $section_class = Loh_Menu_Helper::is_menu_item_for_home($item_output) ? 'home' : '';
+
+      $out .= "\n<section class=\"$section_class link-group\"><header><h1>$item_output</h1></header>";
     }
     else {
   		$out .= "\n$indent <li>$item_output</li>";

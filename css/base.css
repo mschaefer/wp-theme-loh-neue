@@ -160,6 +160,10 @@ body {
       border-radius: 5px;
     }
 
+      body.home #primary-menu li.home {
+        display: none;
+      }
+
       #primary-menu li:last-child {
         margin-right: 0px;
       }
@@ -204,8 +208,12 @@ body {
 
   #footer .link-group {
     float: left;
-    padding-right: 2em;
+    padding-right: 2.5em;
   }
+
+    body.home #footer .link-group.home {
+      display: none;
+    }
 
     #footer .link-group h1 {
       text-transform: uppercase;

@@ -3,7 +3,7 @@
   global $body_class;
   
   if(!isset($content_class)) $content_class = '';
-  if(!isset($page_class)) $body_class = '';
+  if(!isset($body_class)) $body_class = '';
 ?>
 <!DOCTYPE html>
 <html>

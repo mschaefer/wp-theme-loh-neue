@@ -9,3 +9,7 @@ Home Page
 This theme is designed to have a static home page. Use the Home Page page template when creating your home page.
 
 Bucket content is pulled from other pages. Name your bucket pages "Home Page Bucket 1", "Home Page Bucket 2", and "Home Page Bucket 3" to include them in the buckets. To set the bucket type (the text at the top of each bucket), on each bucket page, add a custom field bucket-type and provide the text for that field.
+
+Menu Items for Home Page
+
+If you would like to hide menu items linking to the home page ON the home page, set the menu item's title attribute to 'home'.

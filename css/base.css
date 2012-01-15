@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Cantarell);
+/*@import url(http://fonts.googleapis.com/css?family=Cantarell);*/
 
 /*
   Palette
@@ -9,6 +9,7 @@
   link blue: #195091
   footer brown: #43311d
   donate red: #b51a16 
+  primary-menu faux translucency: #e1ecf4;
 */
 
 /* LOH Neue */
@@ -37,13 +38,37 @@ a {
     text-decoration: underline;
   }
 
-a.donate {
-  background-color: #b51a16;
-  padding: .25em;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: Cantarell, sans-serif;
+ul.donate-menu, ul.donate-menu li {
+  margin: 0px;
+  padding: 0px;
 }
+
+  .donate-menu a {
+    background-color: #b51a16;
+    padding: .25em .5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Cantarell, sans-serif;
+    font-size: .875em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+    .donate-menu a:hover {
+      position: relative;
+      left: -1px;
+      top: -1px;
+      text-decoration: none;
+      background-color: #b51a16;
+      -moz-box-shadow: 2px 2px 5px -1px #888;
+      -webkit-box-shadow: 2px 2px 5px -1px #888;
+      box-shadow: 2px 2px 5px -1px #888;
+    }
+
+      #primary-menu .donate-menu a:hover {
+        background-color: #b51a16;
+      }
 
 body {
   background-color: #ffffff;
@@ -65,7 +90,7 @@ body {
 }
 
 #header {
-  overflow: auto;
+  overflow: show;
   margin: 0px auto;
   position: relative;
 }
@@ -111,28 +136,40 @@ body {
       #social-menu a.social-youtube { background-position: -32px 0px; }
       #social-menu a.social-flickr { background-position: -48px 0px; }
 
+  #header .donate-menu {
+    float: right;
+    margin-top: 2em;
+    font-size: 1.125em;
+  }
+
   #header #primary-menu {
     float: left;
+    width: 70%;
     margin-left: 1.5em;
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 1.125em;
   }
 
     #primary-menu li {
       margin-right: 1em;
+      padding: .15em .85em;
+      background-color: #e1ecf4;
+      background-color: rgba(255, 255, 255, .5);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
     }
 
       #primary-menu li:last-child {
-        margin-right; 0px;
+        margin-right: 0px;
       }
 
     #primary-menu a:hover {
-      background-color: #ffffff;
+      text-decoration: none;
     }
 
-    #header .donate {
-      float: right;
-      margin-top: 2em;
+    #primary-menu li:hover {
+      background-color: #ffffff;
     }
 
 #footer {
@@ -153,6 +190,18 @@ body {
       text-decoration: underline;
     }
 
+  #footer .donate-menu {
+    float: right;
+  }
+
+    #footer .donate-menu a {
+      font-size: 1em;
+    }
+
+    #footer .donate-menu a:hover {
+      text-decoration: none;
+    }
+
   #footer .link-group {
     float: left;
     padding-right: 2em;
@@ -160,17 +209,23 @@ body {
 
     #footer .link-group h1 {
       text-transform: uppercase;
+      line-height: 1.5em;
       font-size: 0.875em;
     }
+
+      #footer .link-group h1 a {
+        padding-top: .25em;
+      }
 
     #footer .link-group li {
       margin-left: 1em;
     }
- 
-    #footer .link-group li a:before {
-      content: '<';
-      padding-right: .25em;
-    }
+
+      #footer .link-group li a:before {
+        content: '<';
+
+        padding-right: .25em;
+      }
   
 #page-subpages {
   width: 13.5%;
@@ -221,17 +276,37 @@ body {
 }
 
   #home-buckets .home-bucket {
-    float: left;
+    float: left;    
+    position: relative;
     width: 33.333333333%;
+    padding-top: 65px;
   }
 
-    #home-buckets .home-bucket header {
-      height: 55px;
-      position: relative;
-      margin-bottom: 0.5em;
+    #home-buckets .home-bucket > * {
+      margin-left: 65px;
     }
 
-    #home-buckets .home-bucket header h1 {
+    #home-buckets .home-bucket p {
+      margin-left: 135px;
+    }
+
+    #home-buckets .home-bucket p:first-child {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      margin-left: 65px;
+    }
+
+      #home-buckets img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 55px;
+        height: 55px;
+        border: 2px solid gray;
+      }
+
+    #home-buckets .home-bucket h1 {
       position: absolute;
       left: 65px;
       top: 20px;
@@ -239,7 +314,8 @@ body {
       font-family: Georgia, 'Bitstream Charter', serif;
     }
 
-    #home-buckets .home-bucket header span {
+    #home-buckets .home-bucket .bucket-type {
+      display: block;
       position: absolute;
       left: 65px;
       top: 0px;
@@ -247,15 +323,5 @@ body {
       text-transform: uppercase;
     }
 
-    #home-buckets img.bucket-profile {
-      display: block;
-      width: 55px;
-      height: 55px;
-      border: 2px solid gray;
-    }
-
-    #home-buckets .home-bucket p {
-      margin-left: 65px;
-    }
 
 @import url(queries.css);

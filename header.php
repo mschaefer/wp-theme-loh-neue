@@ -9,15 +9,16 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title></title>
+  <title><?php the_title(); ?></title>
 
   <link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri() ?>/css/base.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery/1.7.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="initial-scale=1.0,width=device-width" />
 </head>
 
@@ -38,6 +39,7 @@
       <nav id="primary-menu">
         <?php loh_primary_menu('horiz-menu'); ?>
       </nav>
-      <a class="donate" href="#">Donate</a>
+
+      <?php loh_donate_button_menu(); ?>
     </div> <!-- #header -->
 <!-- end: header --> 

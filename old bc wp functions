@@ -1,0 +1,74 @@
+  function bc_tag_list() {
+    echo get_the_tag_list( '<header><h1>Tags</h1></header><span>', ', ', '</span>' );
+  }
+
+  // Custom Menus
+  add_action('init', 'bc_register_custom_menus');
+   
+  function bc_register_custom_menus() {
+    register_nav_menu('primary_nav_menu', __('Primary Navigation Menu'));
+  }
+
+  function bc_get_menu_items( $menu_name ) {
+    $items = array();
+    if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+      $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+      $items = (array) wp_get_nav_menu_items($menu->term_id);
+    }
+
+    return $items;
+  }
+
+  function bc_get_primary_menu() {
+    $items = bc_get_menu_items( 'primary_nav_menu' );
+    
+    $menu = '<ul id="menu">';
+    foreach ( $items as $key => $item ) {
+        switch ($item->title) {
+            case 'Gallery':
+                $id = 'menu-gallery';
+                break;
+            case 'Articles':
+                $id = 'menu-blog';
+                break;
+            default:
+                $id = '';
+                break;
+        }
+
+        $id = strlen($id) > 0 ? ' id="'.$id.'"' : '';
+
+        $menu .= '<li' . $id . '><a href="' . $item->url . '">' . $item->title . '</a></li>';
+    }
+    $menu .= '</ul>';
+
+    echo $menu;
+  }
+
+  function bc_get_children_of_page( $parent_page ) {
+    return get_pages( array( 'child_of' => $parent_page->ID, 'parent' => $parent_page->ID, 'hierarchical' => false ) );
+  }
+
+  function bc_get_gallery_items_submenu() {
+    echo '<div id="submenu-gallery" class="submenu">';
+
+    $gallery_page = get_page_by_title( 'Gallery' );
+    $category_pages = bc_get_children_of_page( $gallery_page );
+
+    foreach( $category_pages as $category_page ) {
+      echo '<section>';
+      echo '<header><h1><a href="' . get_permalink($category_page->ID) . '">' . $category_page->post_title . '</a></h1></header><ul>';
+
+      foreach( bc_get_children_of_page( $category_page ) as $page ) {
+        echo '<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
+      }
+
+      echo '</ul></section>';
+    }
+    echo '</div> <!-- #submenu-gallery -->';
+  }
+
+  function bc_get_blog_recent_posts_submenu() {
+    wp_get_archives('type=postbypost&limit=5&format=custom?before=<li>&after=</li>');
+  }
+endif;

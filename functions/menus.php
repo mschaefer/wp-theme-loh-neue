@@ -16,9 +16,20 @@ function loh_page_children_menu($id) {
 add_action('init', 'loh_register_custom_menus');
  
 function loh_register_custom_menus() {
+  register_nav_menu('donate_button_menu', __('LOH Donate Button'));
   register_nav_menu('primary_nav_menu', __('LOH Primary Navigation Menu'));
   register_nav_menu('social_nav_menu', __('LOH Social Media Menu'));
   register_nav_menu('footer_nav_menu', __('LOH Footer Menu'));
+}
+
+function loh_menu($ul_class = '', $menu_location = 'primary_nav_menu') {
+  $ul = "<ul class=\"$ul_class\">\n";
+
+  foreach(loh_menu_items($menu_location) as $item) {
+    $ul .= "<li>" . Loh_Menu_Helper::build_menu_item($item) . "</li>\n";
+  }
+
+  echo $ul . "</ul>";
 }
 
 function loh_menu_items( $menu_name ) {
@@ -57,15 +68,11 @@ function loh_social_menu($ul_class = '') {
 }
 
 function loh_primary_menu($ul_class = '') {
-  $ul = "<ul class=\"$ul_class\">\n";
+  loh_menu($ul_class);
+}
 
-  $menu_items = loh_menu_items('primary_nav_menu');
-
-  foreach($menu_items as $item) {
-    $ul .= "<li><a href=\"$item->url\">$item->title</a></li>\n";
-  }
-  
-  echo $ul . "</ul>";
+function loh_donate_button_menu($ul_class = 'donate-menu') {
+  loh_menu($ul_class, 'donate_button_menu');
 }
 
 function loh_footer_menu() {
@@ -84,6 +91,17 @@ function loh_footer_menu() {
   }
 
  echo $menu;
+}
+
+class Loh_Menu_Helper {
+  public static function build_menu_item($item) {
+    $attr  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+    $attr .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+    $attr .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+    $attr .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+    return '<a'. $attr .'>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
+  }
 }
 
 /*
@@ -110,12 +128,7 @@ class Loh_Footer_Menu_Walker extends Walker_Nav_Menu {
 	function start_el(&$out, $item, $depth, $args) {
 		$indent = ( $depth ) ? str_repeat( "  ", $depth ) : '';
 
-    $attr  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-	  $attr .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-	  $attr .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-	  $attr .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-
-	  $item_output = '<a'. $attr .'>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
+	  $item_output = Loh_Menu_Helper::build_menu_item($item);
 
     if( $depth == 0) {
       if( $this->element_count > 0 ) {

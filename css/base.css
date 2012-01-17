@@ -1,5 +1,5 @@
 @import url(reset.css);
-/*@import url(http://fonts.googleapis.com/css?family=Cantarell);*/
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
 
 /*
   Palette
@@ -234,7 +234,31 @@ body {
 
         padding-right: .25em;
       }
+
+  #footer #footer-credits {
+    clear: both;
+    width: 100%;
+    padding-top: 2em;
+    text-align: center;
+  }
   
+    #footer #footer-credits li {
+      display: inline;
+    }
+
+      #footer #footer-credits li:before {
+        content: '|';
+        margin: auto .5em;
+      }
+
+      #footer #footer-credits li:first-child:before {
+        content: '';
+      }
+
+        #footer #footer-credits div {
+          display: inline;
+        }
+
 #page-subpages {
   width: 13.5%;
   float: left;

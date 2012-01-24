@@ -12,7 +12,6 @@
   <title><?php the_title(); ?></title>
 
   <link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri() ?>/css/base.css" />
-  <script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery/1.7.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,6 +19,8 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+  <?php wp_head(); ?>
 </head>
 
 <body class="<?php echo $body_class; ?>">

@@ -2,11 +2,22 @@
 
 function loh_bucket($page_title) {
   $page = get_page_by_title( $page_title );
-  $custom_fields = get_post_custom($page->ID);
 
-  $bucket_type = array_key_exists('bucket-type', $custom_fields) ? $custom_fields['bucket-type'][0] : '';
+  if( $page ) {
+    $custom_fields = get_post_custom($page->ID);
 
-  echo apply_filters('the_content', $page->post_content) ."<span class=\"bucket-type\">$bucket_type</span>";
+    $bucket_type = array_key_exists('bucket-type', $custom_fields) ? $custom_fields['bucket-type'][0] : '';
+
+    echo apply_filters('the_content', $page->post_content) ."<span class=\"bucket-type\">$bucket_type</span>";
+  }
+}
+
+function loh_page_content($page_title) {
+  $page = get_page_by_title( $page_title );
+
+  if( $page ) {
+    echo apply_filters('the_content', $page->post_content);
+  }
 }
 
 function loh_page_children($id) {

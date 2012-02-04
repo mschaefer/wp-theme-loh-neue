@@ -192,7 +192,7 @@ body {
         visibility: hidden;
         position: absolute;
         min-width: 11em;
-        top: 1.75em;
+        top: 2em;
         left: -0.5em;
         background-color: #e1ecf4; /* fallback background */
         background-color: rgba(255, 255, 255, .75);
@@ -253,7 +253,7 @@ body {
           text-decoration: none;
         }
 
-    #primary-menu h1:hover, #primary-menu li:hover {
+    #primary-menu .active h1, #primary-menu h1:hover, #primary-menu li:hover {
       background-color: #ffffff;
     }
 

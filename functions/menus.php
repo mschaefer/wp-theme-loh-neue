@@ -22,7 +22,7 @@ function loh_register_custom_menus() {
   register_nav_menu('footer_nav_menu', __('LOH Footer Menu'));
 }
 
-function loh_menu($ul_class = '', $menu_location = 'primary_nav_menu') {
+function loh_menu($ul_class = '', $menu_location) {
   $ul = "<ul class=\"$ul_class\">\n";
 
   foreach(loh_menu_items($menu_location) as $item) {
@@ -71,21 +71,25 @@ function loh_social_menu($ul_class = '') {
   echo $ul . "</ul>";
 }
 
-function loh_primary_menu($ul_class = '') {
-  loh_menu($ul_class);
-}
-
 function loh_donate_button_menu($ul_class = 'donate-menu') {
   loh_menu($ul_class, 'donate_button_menu');
 }
 
+function loh_primary_menu() {
+ echo loh_walked_menu('primary_nav_menu');
+}
+
 function loh_footer_menu() {
+ echo loh_walked_menu('footer_nav_menu');
+}
+
+function loh_walked_menu($theme_location) {
   $defaults = array(
-    'theme_location'  => 'footer_nav_menu',
+    'theme_location'  => $theme_location,
     'container'       => false,
     'echo'            => false,
     'items_wrap'      => '%3$s',
-    'walker'          => new Loh_Footer_Menu_Walker() );
+    'walker'          => new Loh_Menu_Walker() );
 
   $menu = wp_nav_menu($defaults);
 
@@ -94,7 +98,7 @@ function loh_footer_menu() {
     $menu .= '</section>';
   }
 
- echo $menu;
+  return $menu;
 }
 
 class Loh_Menu_Helper {
@@ -113,10 +117,10 @@ class Loh_Menu_Helper {
 }
 
 /*
- * Loh_Footer_Menu_Walker: custom walker to build the footer menu.
+ * Loh_Menu_Walker: custom walker to build the header and footer menus
  *
  */
-class Loh_Footer_Menu_Walker extends Walker_Nav_Menu {
+class Loh_Menu_Walker extends Walker_Nav_Menu {
   var $element_count = 0;
   
 	function start_lvl(&$out, $depth) {
@@ -155,5 +159,5 @@ class Loh_Footer_Menu_Walker extends Walker_Nav_Menu {
   function end_el(&$out, $item, $depth, $args) {
     $this->element_count++;
   }
-} // class Loh_Footer_Menu_Walker
+} // class Loh_Menu_Walker
 ?>

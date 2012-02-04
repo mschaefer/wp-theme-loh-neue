@@ -9,5 +9,6 @@
       </ul>
     </nav> <!-- #footer -->
   </div> <!-- #content -->
+  <script src="<?php echo get_stylesheet_directory_uri() ?>/js/pages/application.js"></script>
 </body>
 </html>

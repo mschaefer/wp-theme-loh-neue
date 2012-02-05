@@ -9,9 +9,6 @@
   $body_class = 'home';
   $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js', 
                    get_stylesheet_directory_uri() . '/js/pages/home.js' );
-  $page_css = array(get_stylesheet_directory_uri() . '/css/nivo-slider-themes/loh/loh.css',
-                    get_stylesheet_directory_uri() . '/css/nivo-slider.css' );
-
   get_header(); 
 ?>
 <section id="home-primary">

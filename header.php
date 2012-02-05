@@ -4,6 +4,9 @@
   
   if(!isset($content_class)) $content_class = '';
   if(!isset($body_class)) $body_class = '';
+
+  global $page_css;
+  if(!isset($page_css)) $page_css = array();
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,6 +15,11 @@
   <title><?php the_title(); ?></title>
 
   <link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri() ?>/css/base.css" />
+<?php
+  foreach ($page_css as $css) {
+?><link rel="stylesheet" media="all" href="<?php echo $css; ?>"/><?php
+    }
+?>
 
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

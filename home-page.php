@@ -7,16 +7,23 @@
 ?>
 <?php 
   $body_class = 'home';
+  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js', 
+                   get_stylesheet_directory_uri() . '/js/pages/home.js' );
+  $page_css = array(get_stylesheet_directory_uri() . '/css/nivo-slider-themes/loh/loh.css',
+                    get_stylesheet_directory_uri() . '/css/nivo-slider.css' );
 
   get_header(); 
 ?>
 <section id="home-primary">
-  <div id="home-slider">
-    <p>Slider</p>
+  <div id="home-slider" class="slider-wrapper theme-loh">
+    <div class="ribbon"></div>
+    <?php loh_home_slider(); ?>
+    <div id="slider" class="nivoSlider"></div>
   </div>
-	  <?php while ( have_posts() ) : the_post(); ?>
-		  <?php the_content(); ?>
-	  <?php endwhile; // end of the loop. ?>
+
+  <?php while ( have_posts() ) : the_post(); ?>
+	  <?php the_content(); ?>
+  <?php endwhile; // end of the loop. ?>
 </section>
 
 <div id="home-secondary">
@@ -58,6 +65,5 @@
     Facebook Feed
   </aside>
 </div> <!-- home-footer --> 
-
 
 <?php get_footer(); ?>

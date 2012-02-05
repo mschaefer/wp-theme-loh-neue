@@ -12,7 +12,10 @@ jQuery(function($) {
     else {
       $img = $slide;
     }
-    $img.attr('title', '#' + caption_selector);
+
+    if( !$img.hasAttr('title') || $img.attr('title') == '' ) {
+      $img.attr('title', '#' + caption_selector);
+    }
     $slide.appendTo( $slider );
 
     // pull out the caption

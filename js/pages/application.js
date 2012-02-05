@@ -1,3 +1,7 @@
+jQuery.fn.hasAttr = function(name) {  
+   return (this.attr(name) !== undefined && this.attr(name) !== false);
+};
+
 jQuery(function($) {
   function primary_menu_in(event) {
     $(event.currentTarget).addClass('active');

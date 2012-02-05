@@ -107,11 +107,11 @@ body {
     height: 90px;
     border: 1px solid #ffffff;
   }
-
+/*
   #header #subscribe {
     float: right;   
   }
-
+*/
   #header .horiz-menu li {
     display: inline;
   }

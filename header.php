@@ -39,12 +39,12 @@
       <nav id="social-menu">
         <?php loh_social_menu('horiz-menu'); ?>
       </nav>
-
+<!--
       <form id="subscribe" action="#" method="post">
         <input type="email" placeholder="email address" />
         <input type="submit" value="Subscribe" />
       </form>
-
+-->
       <nav id="primary-menu">
         <?php loh_primary_menu('horiz-menu'); ?>
       </nav>

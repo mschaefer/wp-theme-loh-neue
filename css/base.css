@@ -167,7 +167,7 @@ body {
   #header #social-menu {
     height: 2em;
     float: right;
-    border-left: 1px solid #000000;
+    border-left: 1px solid #99a4aa;
     margin-left: 1em;
   }
 
@@ -179,6 +179,7 @@ body {
       display: inline-block;
       height: 16px;
       width: 16px;
+      margin-top: .5em;
       text-indent: -9999px;
       background-image: url(images/social-icons.png);
       background-repeat: no-repeat;

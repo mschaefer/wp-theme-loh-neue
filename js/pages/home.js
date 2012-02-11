@@ -27,7 +27,21 @@ jQuery(function($) {
     $(element).remove();
   });
 
-  $('#slider').nivoSlider({ effect : 'fade' });
+  $slider = $('#slider');
+  $slider.nivoSlider({ effect : 'fade' });
+
+  // Set up the left and right nav arrows in a navigational container
+  $nav = $('.nivo-controlNav');
+  $leftArrow = $('<div class="nivo-controlNav-loh"><a class="nivo-control left-arrow">Previous</a></div>');
+  $rightArrow = $('<div class="nivo-controlNav-loh"><a class="nivo-control right-arrow">Next</a></div>');
+
+  $navContainer = $('<div class="nivo-controlNav-container"></div>');
+  $nav.before($navContainer);
+  $navContainer.append($leftArrow).append($nav).append($rightArrow);
+
+  // Since there's no api, hook up left and right arrows with slider equivalents
+  $rightArrow.click(function() { $('a.nivo-nextNav', $slider.get()).trigger('click'); } );
+  $leftArrow.click(function() { $('a.nivo-prevNav', $slider.get()).trigger('click'); });
 });
 /*
 effects: 

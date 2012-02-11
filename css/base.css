@@ -676,7 +676,7 @@ body {
 	right:0px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav a {
+.nivo-controlNav-container a {
 	position:relative;
 	z-index:9;
 	cursor:pointer;
@@ -714,13 +714,22 @@ Author URI:
 	display:block;
 }
 
-.theme-loh .nivo-controlNav {
+.theme-loh .nivo-controlNav-container {
 	position:absolute;
 	right:5%;
 	bottom:-42px;
-    margin-left:-40px; /* Tweak this to center bullets */
+  width: 125px;
 }
-.theme-loh .nivo-controlNav a {
+
+.theme-loh .nivo-controlNav {
+  float: left;
+}
+
+.theme-loh .nivo-controlNav-loh {
+  float: left;
+}
+
+.theme-loh .nivo-controlNav-container a {
 	display:block;
 	width:22px;
 	height:22px;
@@ -730,9 +739,25 @@ Author URI:
 	margin-right:3px;
 	float:left;
 }
+  .theme-loh .nivo-controlNav a:last-child {
+    margin-right: 0px;
+  }
+
+  .theme-loh .nivo-controlNav-loh a {
+    margin-right: 0px;
+  }
+  
 .theme-loh .nivo-controlNav a.active {
 	background-position:0 -22px;
 }
+
+  .theme-loh .nivo-controlNav-loh a.left-arrow {
+  	background-position:0 -42px;
+  }
+
+  .theme-loh .nivo-controlNav-loh a.right-arrow {
+  	background-position:0 -62px;
+  }
 
 .theme-loh .nivo-directionNav a {
 	display:block;

@@ -20,9 +20,21 @@ function loh_page_content($page_title) {
   }
 }
 
-function loh_page_children($id) {
+function loh_page_children($parent_id) {
   $query = new WP_Query();
-  $pages = $query->query(array('post_type' => 'page'));
-  return get_page_children($id, $pages);
+  $all_pages = $query->query(array('post_type' => 'page','posts_per_page'=>-1));
+
+  return get_page_children($parent_id, $all_pages);
+}
+
+function root_page_id_for($page_id) {
+  $ancestor_array = get_ancestors( $page_id, 'page' );
+
+  if( count($ancestor_array) > 0 ) {
+    return $ancestor_array[0];
+  }
+  else {
+    return $page_id;
+  }
 }
 ?>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <aside id="page-subpages" class="sub-menu">
-  <?php echo loh_page_children_menu(get_the_ID()); ?>
+  <?php page_menu(get_the_ID()) ?>
 </aside>
 
 <section id="page-primary">

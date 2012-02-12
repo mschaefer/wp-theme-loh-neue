@@ -1,16 +1,32 @@
 <?php
 
-function loh_page_children_menu($id) {
+function loh_page_children_menu($id, $disable_link_to_page_id = -1) {
   $children = loh_page_children($id);
   $out = '<ul>';
 
   foreach($children as $child) {
     $name = $child->post_title;
-    $url = get_permalink($child->ID);
-    $out .= ("<li><a href=\"$url\" title=\"$name page\">$name</a></li>");
+    if( $child->ID != $disable_link_to_page_id ) {
+      $url = get_permalink($child->ID);
+      $out .= ("<li><a href=\"$url\" title=\"$name page\">$name</a></li>");
+    }
+    else {
+      $out .= ("<li class=\"active\">$name</li>");
+    }
   }
 
   return $out . '</ul>';
+}
+
+/**
+ * Echo a page menu for any page in a page hierarchy
+ *
+ * @param int $page_id The ID of the page on which the menu will be located
+ */
+function page_menu($page_id) {
+  $root_page_id = root_page_id_for($page_id);
+ 
+  echo loh_page_children_menu($root_page_id, $page_id);
 }
 
 add_action('init', 'loh_register_custom_menus');

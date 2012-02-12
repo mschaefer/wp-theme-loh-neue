@@ -70,9 +70,11 @@ h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
 h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
 h3 { font-size: 1.125em; /* 16x1.125=18 */ }
 h4 { font-size: 0.875em; /* 16x0.875=14 */ }
-p, li { font-size: 0.75em;  /* 16x0.75=12 */ }
+p, 
+li { font-size: 0.75em;  /* 16x0.75=12 */ }
 
-p, li {
+p, 
+li {
   line-height: 1.5em;
 }
 
@@ -89,7 +91,8 @@ a {
     text-decoration: underline;
   }
 
-ul.donate-menu, ul.donate-menu li {
+ul.donate-menu, 
+ul.donate-menu li {
   margin: 0px;
   padding: 0px;
 }
@@ -135,7 +138,9 @@ body {
   background-repeat: no-repeat;
 }
 
-#header, #footer, #home-buckets {
+#header, 
+#footer, 
+#home-buckets {
   width: 94%;
   clear: both;
   padding-left: 3%;
@@ -230,7 +235,8 @@ body {
         background-position: 4px 3px;
       }
 
-      #primary-menu h1, #primary-menu ul {
+      #primary-menu h1, 
+      #primary-menu ul {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
@@ -465,7 +471,8 @@ body {
     text-transform: uppercase;
   }
 
-#home-secondary, #secondary-footer {
+#home-secondary,
+#secondary-footer {
   overflow: auto;
   width: 94%;
   padding-left: 3%;
@@ -473,7 +480,8 @@ body {
   clear: both;
 }
 
-  #home-secondary > *, #secondary-footer > * {
+  #home-secondary > *,
+  #secondary-footer > * {
     float: left;
     overflow: show;
     width: 31.333333333%;
@@ -481,12 +489,14 @@ body {
     margin-top: 1em;
   }
 
-  #home-secondary h1, #secondary-footer h1 {
+  #home-secondary h1,
+  #secondary-footer h1 {
     font-size: 1.125em;
     font-family: Georgia, 'Bitstream Charter', serif;
   }
 
-    #home-secondary > *:first-child, #secondary-footer > *:first-child {
+    #home-secondary > *:first-child,
+    #secondary-footer > *:first-child {
       margin-left: 0px;
     }
 
@@ -522,7 +532,8 @@ body {
         float: left;
       }
 
-      #events a, #events .location {
+      #events a, 
+      #events .location {
         width: 80%;
       }
 

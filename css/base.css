@@ -97,7 +97,8 @@ ul.donate-menu li {
   padding: 0px;
 }
 
-  .donate-menu a {
+  .donate-menu a,
+  a.donate-button {
     background-color: #b51a16;
     padding: .25em .5em;
     color: #ffffff;
@@ -109,7 +110,8 @@ ul.donate-menu li {
     border-radius: 5px;
   }
 
-    .donate-menu a:hover {
+    .donate-menu a:hover,
+    a.donate-button:hover {
       position: relative;
       left: -1px;
       top: -1px;

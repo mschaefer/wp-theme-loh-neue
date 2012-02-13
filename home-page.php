@@ -25,11 +25,11 @@
 
 <div id="home-secondary">
   <article id="sponsorship-bucket-1" class="bucket">
-    <?php loh_bucket('Sponsorship Bucket 1'); ?>
+    <?php loh_bucket('Home Page: Sponsorship Bucket 1'); ?>
   </article>
 
   <article id="sponsorship-bucket-2" class="bucket">
-    <?php loh_bucket('Sponsorship Bucket 2'); ?>
+    <?php loh_bucket('Home Page: Sponsorship Bucket 2'); ?>
   </article>
 
   <article id="events">

@@ -1,0 +1,42 @@
+body.donate {}
+
+body.donate .column {}
+
+body.donate .column_left {
+  float: left;
+  width: 44%;
+  padding-right: 5%;
+  overflow: visible;
+  clear: left;
+}
+
+body.donate .column_right {
+  float: right;
+  width: 44%;
+  padding-left: 5%;
+  border-left: 1px solid #99a4aa;
+  overflow: visible;
+}
+
+  body.donate .bucket {
+    margin-top: 1em;
+  }
+
+    body.donate .bucket > * {
+      margin-left: 110px;
+    }
+
+    body.donate .bucket h1 {
+      font-size: 1.125em;
+      font-family: Georgia, 'Bitstream Charter', serif;
+    }
+
+      body.donate .bucket p:first-child {
+        margin-left: 0px;
+      }
+
+        body.donate .bucket img {
+          width: 85px;
+          height: 85px;
+          border: 10px solid #ffffff;
+        }

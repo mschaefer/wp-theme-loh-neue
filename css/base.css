@@ -142,9 +142,13 @@ body {
   padding-top: 20px;
   margin: 0px auto;
   background-color: #c3d8e9;
-  background-image: url(images/sky.jpg);
+  background-image: url(images/sky-internal.jpg);
   background-repeat: no-repeat;
 }
+
+  body.home #content {
+    background-image: url(images/sky.jpg);
+  }
 
 #header, 
 #footer, 
@@ -166,7 +170,8 @@ body {
     float: left;
     width: 150px;
     height: 90px;
-    border: 1px solid #ffffff;
+    text-indent: -9999px;
+    overflow: hidden;
   }
 /*
   #header #subscribe {

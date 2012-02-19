@@ -414,7 +414,7 @@ body {
           display: inline;
         }
 
-#page-subpages {
+#secondary-menu {
   width: 13.5%;
   float: left;
   clear: left;
@@ -422,9 +422,9 @@ body {
   font-size: 1.125em;
 }
 
-#page-primary {
+#page-primary, .post {
   width: 77.5%;
-  float: left;
+  float: right;
   clear: right;
   margin: 2em 3% auto 1.5%;
 }
@@ -597,6 +597,70 @@ body {
     background-color: gray;
   }
 
+.post {  
+  margin-bottom: 1em;
+}
+
+  .post .post-header .post-category {
+    font-family: Cantarell, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875em;
+  }
+
+  .post .post-header .post-title {
+    font-size: 1em;
+  }
+
+    body.single-post .post .post-header .post-title {
+      font-size: 2.25em;
+    }
+
+  .post .post-header .edit-link {
+    font-size: 0.857em;
+  }
+
+  .post .alignleft {
+    float: left;
+  }
+  .post .alignright {
+    float: right;
+  }
+  .post .alightcenter {
+    display: block;
+    margin: auto;
+  }
+
+  .post .post-footer {
+    font-style: italic;
+  }
+
+    .post .post-footer .post-meta {
+      border-right: solid 1px #99a4aa;
+      padding-right: 0.5em;
+      margin-right: 0.5em;
+      font-size: 0.75em;
+    }
+
+    .post .post-footer .post-meta,
+    .post .post-footer .tags,
+    .post .post-footer .tags li {
+      display: inline;
+    }
+
+      .post .post-footer .tags li:after {
+        content: ', ';
+      }
+
+        .post .post-footer .tags li:last-child:after {
+          content: '';
+        }
+  
+    .post .post-footer .edit-link {
+      border-left: solid 1px #99a4aa;
+      padding-left: 0.5em;
+      margin-left: 0.5em;
+      font-size: 0.75em;
+    }
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {

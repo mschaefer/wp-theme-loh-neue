@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<aside id="page-subpages" class="sub-menu">
+<aside id="secondary-menu" class="sub-menu">
   <?php page_menu(get_the_ID()) ?>
 </aside>
 

@@ -12,7 +12,13 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title><?php the_title(); ?></title>
+  <title>
+    <?php
+	    wp_title( '|', true, 'right' );
+	    bloginfo( 'name' );
+      echo " | " . (is_home() || is_front_page() ? get_bloginfo('description', 'display') : ''); 
+    ?>
+  </title>
 
   <link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri() ?>/css/base.css" />
 <?php

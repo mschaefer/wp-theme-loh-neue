@@ -16,7 +16,7 @@
     <?php
 	    wp_title( '|', true, 'right' );
 	    bloginfo( 'name' );
-      echo " | " . (is_home() || is_front_page() ? get_bloginfo('description', 'display') : ''); 
+      echo is_home() || is_front_page() ? (" &mdash; " . get_bloginfo('description', 'display')) : '';
     ?>
   </title>
 

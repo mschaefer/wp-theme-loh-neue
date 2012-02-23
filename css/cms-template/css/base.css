@@ -259,6 +259,10 @@ body {
 }
 
 /* Neon-specific Styles */
+#primary table.autoCommon {
+  margin-bottom: 0.5em;
+}
+
 form table td {
   padding: .35em 2px;
   vertical-align: top;
@@ -266,6 +270,23 @@ form table td {
 
   form table tr .neonFieldLabel sup {
     color: #2f2f2f;
+  }
+
+  .neonBody {
+    margin-bottom: .5em;
+  }
+    td.neonBody,
+    .neonFieldLabel,
+    .neonFieldText {
+      line-height: 1.5em;
+    }
+
+    span.neonBody {
+      display: block;
+    }
+
+  form tr.curFocus td {
+    font-style: italic;
   }
 
 .neon2Header {
@@ -278,4 +299,8 @@ form table td {
   display: block;
   font-size: 1.5em;
   margin-bottom: .5em;
+}
+
+.necTableBig td {
+  line-height: 30px;
 }

@@ -1,0 +1,166 @@
+#primary ol, #primary ul {
+  list-style: none outside none;
+}
+
+:focus {
+  outline: 0 none;
+}
+
+#primary ins {
+  text-decoration: none;
+}
+
+#primary del {
+  text-decoration: line-through;
+}
+
+#primary test {
+  border-style: dotted;
+  border-width: 0.1em;
+}
+
+#primary table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#primary table, #primary td, #primary th {
+  white-space: inherit !important;
+}
+
+#primary table {
+  margin: 0 auto;
+}
+
+#primary {
+  word-wrap: break-word;
+}
+
+#primary input, #primary select, #primary textarea {
+    vertical-align: middle;
+    width: auto !important;
+}
+
+#primary td.curFocus {
+  background: none repeat scroll 0 0 #d5d5d5;
+}
+
+#primary table.autoCommon {
+    width: 100% !important;
+}
+
+#primary .col-1 {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 100 !important;
+}
+
+#primary td {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#primary table.reportLook td {
+    color: #000000;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+#primary .table_bg_caption {
+    background-color: #CCCCCC !important;
+}
+#primary .table_bg_light {
+    background-color: #EEEEEE !important;
+}
+#primary .table_bg_dark {
+    background-color: #DDDDDD !important;
+}
+#primary .neonValidate {
+    color: red !important;
+}
+#primary .photo_app {
+    color: red;
+}
+#primary div.jobPost, #primary table.reportLook {
+    background-color: #000000 !important;
+}
+
+#primary #buttonDisplay {
+    padding-top: 10px;
+}
+
+#primary .neonTableCell {
+    padding: 0;
+}
+
+#primary .neonTableHeaderCell {
+    color: #666666;
+    font-weight: bold;
+}
+#primary .neon2Title {
+    padding: 15px 0 10px;
+}
+#primary h3 {
+    margin: 20px 0;
+}
+#primary table.reportLook {
+    border: medium none;
+    font-size: 12px !important;
+}
+#primary .reportLook0 td, #primary .reportLookHilite td {
+    border: medium none;
+}
+#primary table.reportLook img {
+    border: 0 none;
+    text-align: left;
+    vertical-align: middle;
+}
+#primary #photoDisplay td {
+    padding: 5px;
+}
+#primary table.reportLook tr th, #primary table.reportLook tr td {
+    padding: 0 !important;
+}
+#primary table.reportLook th {
+    background: url("/np/neon_trial_basic/icon-sort.gif") no-repeat scroll 0 0 #EBEBEB;
+    color: #666666;
+    font-weight: bold;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+}
+#primary table.reportLook, #primary table.reportLook td, #primary table.reportLook th {
+    white-space: nowrap !important;
+}
+
+#primary textarea {
+    min-height: 80px;
+    overflow: auto;
+    resize: vertical;
+}
+
+
+#primary .membershipDirectory {
+    width: 100%;
+}
+#primary table.search td {
+    border: medium none !important;
+}
+#primary .out_table_S td {
+    padding: 10px;
+}
+#primary .shopping_C td {
+    padding: 0 5px;
+}
+#primary .shopping_C td p {
+    line-height: 25px;
+}
+#primary .neonFieldLabel sup {
+    line-height: 30px;
+}
+#primary .neonCheckbox {
+    line-height: 20px !important;
+}
+

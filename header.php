@@ -41,6 +41,7 @@
 
 <body class="<?php echo $body_class; ?>">
   <div id="content">
+    <a name="top">Top of Page</a>
     <div id="header">
       <a id="logo" href="<?php echo home_url(); ?>" title="LOH Home"><h1>Light of Hope</h1></a>
 

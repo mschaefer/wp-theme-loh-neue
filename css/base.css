@@ -97,6 +97,22 @@ a {
     text-decoration: underline;
   }
 
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+a[name="top"] {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 ul.donate-menu, 
 ul.donate-menu li {
   margin: 0px;
@@ -440,6 +456,7 @@ body {
 
   #home-primary #home-slider {
     width: 96%;
+    clear: both;
   }
 
     #slider {
@@ -453,6 +470,57 @@ body {
       font-size: 10pt;
     }
 
+  #home-primary #home-content {
+    float: left;
+    width: 60.66%;
+  }
+
+  #events {
+    overflow: visible;
+    float: right;
+    width: 39.33%;
+  }
+    
+    #events h2 {
+      font-family: Cantarell, sans-serif;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #99a4aa;
+      width: 100%;
+      line-height: 1.5em;
+      margin-bottom: .5em;
+    }
+
+    #events li > * {
+      float: left;
+    }
+
+    #events a, 
+    #events .location {
+      width: 80%;
+    }
+
+    #events time {
+      font-family: Cantarell, sans-serif;
+      clear: left;
+      width: 15%;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      margin: auto 5% .5em 0px;
+      padding: .05em 0px .15em 0px;
+      color: #6496bb;
+      background-color: #ffffff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+
+      #events time .month {
+        color: #c3d8e9;
+        font-size: .8em;
+      }
 
 .bucket {
   position: relative;
@@ -484,115 +552,49 @@ body {
     text-transform: uppercase;
   }
 
-#home-secondary,
 #secondary-footer {
   overflow: auto;
   width: 94%;
   padding-left: 3%;
   padding-right: 3%;
   clear: both;
-}
-
-  #home-secondary > *,
-  #secondary-footer > * {
-    float: left;
-    overflow: show;
-    width: 31.333333333%;
-    margin-left: 3%;
-    margin-top: 1em;
-  }
-
-  #home-secondary h1,
-  #secondary-footer h1 {
-    font-size: 1.125em;
-    font-family: Georgia, 'Bitstream Charter', serif;
-  }
-
-    #home-secondary > *:first-child,
-    #secondary-footer > *:first-child {
-      margin-left: 0px;
-    }
-
-      #home-secondary .bucket > * {
-        margin-left: 110px;
-      }
-
-      #home-secondary .bucket p:first-child {
-        margin-left: 0px;
-      }
-
-        #home-secondary .bucket img {
-          width: 85px;
-          height: 85px;
-          border: 10px solid #ffffff;
-        }
-
-    #events {
-      overflow: visible;
-    }
-      
-      #events h2 {
-        font-family: Cantarell, sans-serif;
-        font-size: 0.75em;
-        text-transform: uppercase;
-        border-bottom: 1px solid #99a4aa;
-        width: 100%;
-        line-height: 1.5em;
-        margin-bottom: .5em;
-      }
-
-      #events li > * {
-        float: left;
-      }
-
-      #events a, 
-      #events .location {
-        width: 80%;
-      }
-
-      #events time {
-        font-family: Cantarell, sans-serif;
-        clear: left;
-        width: 15%;
-        font-size: 1.8em;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        margin: auto 5% .5em 0px;
-        padding: .05em 0px .15em 0px;
-        color: #6496bb;
-        background-color: #ffffff;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-      }
-
-        #events time .month {
-          color: #c3d8e9;
-          font-size: .8em;
-        }
-
-#secondary-footer {
   color: #ffffff;
   background-color: #573c1f;
   font-family: Cantarell, sans-serif;
 }
 
-  #secondary-footer .bucket > * {
-    margin-left: 65px;
+  #secondary-footer > * {
+    float: left;
+    overflow: show;
+    width: 50%;
+    margin-top: 1em;
   }
 
-  #secondary-footer .bucket p:first-child {
-    margin-left: 0px;
+  #secondary-footer h1 {
+    font-size: 1.125em;
+    font-family: Georgia, 'Bitstream Charter', serif;
   }
 
-    #secondary-footer .bucket img {
-      width: 55px;
-      height: 55px;
-      border: 2px solid #d7d1c1;
+    #secondary-footer > *:first-child {
+      margin-left: 0px;
     }
 
-  #home-feed {
+    #secondary-footer .bucket > * {
+      margin-left: 65px;
+    }
+
+    #secondary-footer .bucket p:first-child {
+      margin-left: 0px;
+    }
+
+      #secondary-footer .bucket img {
+        width: 55px;
+        height: 55px;
+        border: 2px solid #d7d1c1;
+      }
+
+  #secondary-footer #home-feed {
+    float: left;
     min-height: 300px;
     background-color: gray;
   }

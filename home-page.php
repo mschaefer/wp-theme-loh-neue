@@ -18,19 +18,11 @@
     <div id="slider" class="nivoSlider"></div>
   </div>
 
+  <section id="home-content">
   <?php while ( have_posts() ) : the_post(); ?>
 	  <?php the_content(); ?>
   <?php endwhile; // end of the loop. ?>
-</section>
-
-<div id="home-secondary">
-  <article id="sponsorship-bucket-1" class="bucket">
-    <?php loh_bucket('Home Page: Sponsorship Bucket 1'); ?>
-  </article>
-
-  <article id="sponsorship-bucket-2" class="bucket">
-    <?php loh_bucket('Home Page: Sponsorship Bucket 2'); ?>
-  </article>
+  </section>
 
   <article id="events">
     <h2>Current News and Events</h2>
@@ -47,19 +39,16 @@
       </li>
     </ol>
   </article>
-</div>
+
+</section>
 
 <div id="secondary-footer">
-  <article>
-    <?php loh_page_content('Home Page: Our Story'); ?>
+  <article id="sponsorship-bucket-1" class="bucket">
+    <?php loh_bucket('Home Page: Sponsorship Bucket 1'); ?>
   </article>
 
-  <section class="bucket">
-    <?php loh_bucket('Home Page Bucket 1'); ?>
-  </section>
-
   <aside id="home-feed">
-    Facebook Feed
+    Blog Feed
   </aside>
 </div> <!-- home-footer --> 
 

@@ -60,4 +60,5 @@
 
       <?php loh_donate_button_menu(); ?>
     </div> <!-- #header -->
+    <div id="main">
 <!-- end: header --> 

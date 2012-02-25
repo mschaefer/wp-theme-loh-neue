@@ -16,7 +16,7 @@
 	<?php endwhile; // end of the loop. ?>
 
   <div class="column_right">
-    <h2>Sponsor a Girl</h2>
+    <h2><?php echo loh_custom_field(get_the_ID(), 'sponsorship-title'); ?></h2>
     <article id="sponsorship-bucket-1" class="bucket">
       <?php loh_bucket('Home Page: Sponsorship Bucket 1'); ?>
       

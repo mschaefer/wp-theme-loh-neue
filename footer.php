@@ -1,4 +1,5 @@
-<!-- begin: footer --> 
+<!-- begin: footer -->
+    </div> <!-- main --> 
     <nav id="footer">
       <?php loh_footer_menu(); ?>
 

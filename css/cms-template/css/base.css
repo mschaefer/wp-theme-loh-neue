@@ -97,6 +97,22 @@ a {
     text-decoration: underline;
   }
 
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+a[name="top"] {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 body {
   background-color: #ffffff;
   font-family: Georgia, 'Bitstream Charter', serif;
@@ -104,14 +120,43 @@ body {
 
 #content {
   width: 960px;
+  padding-top: 20px;
   margin: 0px auto;
   background-color: #c3d8e9;
   background-image: url(images/sky.jpg);
   background-repeat: no-repeat;
 }
 
+  #main ul,
+  #main ol {
+    padding-left: 1em;
+    margin-bottom: .5em;
+  }
+
+  #main ul { list-style-type: disc; }
+  #main ul ul { list-style-type: circle; }
+  #main ul ul ul { list-style-type: square; }
+
+  #main ol { list-style-type: decimal; }
+  #main ol ol { list-style-type: lower-roman }
+  #main ol ol ol { list-style-type: lower-alpha }
+
+  #main sub,
+  #main sup {
+    font-size: .85em;
+  }
+
+  #main sub {
+    vertical-align: sub;
+  }
+
+  #main sup {
+    vertical-align: super;
+  }
+
 #header, 
-#footer {
+#footer, 
+#home-buckets {
   width: 94%;
   clear: both;
   padding-left: 3%;
@@ -122,6 +167,7 @@ body {
   overflow: show;
   margin: 0px auto;
   position: relative;
+  height: 4.5em;
 }
 
   #header #logo {
@@ -132,15 +178,20 @@ body {
     text-indent: -9999px;
     overflow: hidden;
   }
-
+/*
+  #header #subscribe {
+    float: right;   
+  }
+*/
   #header .horiz-menu li {
     display: inline;
   }
 
   #header #primary-menu {
-    float: right;
-    width: 77.659%; /* line up with page content */
-    margin-top: 5.2em;
+    left: 205px;
+    position: absolute;
+    top: 3.5em;
+    width: 70%;
   }
 
     #primary-menu .link-group {
@@ -151,26 +202,23 @@ body {
     }
 
       #primary-menu h1 {
-        margin-right: 0.7em;
-        padding: .25em .75em;
+        margin-right: 0.5em;
+        padding: .25em .5em;
         font-size: 1em;
         background-color: #e1ecf4; /* fallback background */
         background-color: rgba(255, 255, 255, .5);
-
       }
+      
+        #primary-menu .link-group:last-child h1 {
+          margin-right: 0px;
+        }
 
-      #primary-menu .link-group.active h1 {
-        background-position: 4px 3px;
-      }
 
-      #primary-menu h1 {
+      #primary-menu h1, 
+      #primary-menu ul {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
-      }
-
-      body.home #primary-menu .home {
-        display: none;
       }
 
         #primary-menu a:hover {
@@ -187,6 +235,7 @@ body {
   padding-bottom: 1em;
   color: #ffffff;
   background-color: #43311d;
+   background-image: url(images/footer-background.jpg);
   font-family: Cantarell, sans-serif;
 }
 
@@ -201,7 +250,7 @@ body {
 
   #footer .link-group {
     float: left;
-    padding-right: 2.5em;
+    padding-right: 2em;
   }
 
     body.home #footer .link-group.home {
@@ -251,7 +300,7 @@ body {
           display: inline;
         }
 
-#primary {
+#main {
   width: 73%;
   float: right;
   clear: right;
@@ -259,7 +308,7 @@ body {
 }
 
 /* Neon-specific Styles */
-#primary table.autoCommon {
+#main table.autoCommon {
   margin-bottom: 0.5em;
 }
 

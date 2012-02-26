@@ -1,7 +1,7 @@
 <?php
 
 function loh_blog_feed() {
-  $recent_posts = wp_get_recent_posts( array('numberposts' => 4) );
+  $recent_posts = wp_get_recent_posts( array('numberposts' => 4, 'post_status' => 'publish') );
   $items = '';
   foreach( $recent_posts as $r ){
     $items .= '<li><a href="' . get_permalink($r["ID"]) . '" title="'.$r["post_title"].'" >' . $r["post_title"].'</a>';

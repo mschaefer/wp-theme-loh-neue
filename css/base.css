@@ -495,6 +495,10 @@ body {
   margin: 2em 1.5% 2em 3%;
 }
 
+  #home-primary .slider-content img {
+    display: none;
+  }
+
   #home-primary p,
   #home-primary li {
     font-family: Cantarell, sans-serif;
@@ -871,7 +875,7 @@ Author URI:
 	position:absolute;
 	right:2%;
 	bottom:-55px;
-  width: 125px;
+  min-width: 125px;
 }
 
 .theme-loh .nivo-controlNav {

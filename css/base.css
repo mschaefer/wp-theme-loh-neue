@@ -252,16 +252,17 @@ body {
       #social-menu a.social-flickr { background-position: -48px 0px; }
 
   #header .donate-menu {
-    float: right;
-    margin-top: 2em;
+    position: absolute;
+    right: 3%;
+    top: 3em;
     font-size: 1.125em;
   }
 
   #header #primary-menu {
-    float: left;
+    left: 205px;
+    position: absolute;
+    top: 3.5em;
     width: 70%;
-    margin-left: 1.5em;
-    margin-top: 2em;
   }
 
     #primary-menu .link-group {
@@ -272,13 +273,16 @@ body {
     }
 
       #primary-menu h1 {
-        margin-right: 0.7em;
-        padding: .25em .75em;
+        margin-right: 0.5em;
+        padding: .25em .5em;
         font-size: 1em;
         background-color: #e1ecf4; /* fallback background */
         background-color: rgba(255, 255, 255, .5);
-
       }
+      
+        #primary-menu .link-group:last-child h1 {
+          margin-right: 0px;
+        }
 
       #primary-menu .link-group.has-submenu h1 {
         padding-left: 1em;

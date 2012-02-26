@@ -412,7 +412,7 @@ body {
 
   #footer .link-group {
     float: left;
-    padding-right: 2.5em;
+    padding-right: 2em;
   }
 
     body.home #footer .link-group.home {
@@ -474,6 +474,12 @@ body {
     list-style-type: none;
     padding-left: 0px;
   }
+
+    #secondary-menu .widget:last-child {
+      padding-bottom: .5em;
+      border-bottom: 1px solid #99a4aa;
+      border-bottom: 1px solid rgba(153, 164, 170, .5);
+    }
 
 #page-primary, .post {
   width: 77.5%;

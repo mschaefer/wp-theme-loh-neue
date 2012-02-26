@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Light of Hope</title>
+
+    <link href='css/light-modified.css' rel="stylesheet" />
+    <link href='css/base.css' rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon" href="css/images/apple-touch-icon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready( function() {
+        $("input").focus( function() {
+          $(this).parent().addClass("curFocus").children("td").toggle();
+        });
+
+        $("input").blur( function() {
+          $(this).parent().removeClass("curFocus").children("td").toggle();
+        });
+
+        $('#copyright-year').html( (new Date()).getFullYear() );
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="header">
+        <a id="logo" href="http://lightofhopekenya.org" title="Light of Hope Home Page"><h1>Light of Hope</h1></a>
+        <nav id="primary-menu">
+          <section class="home link-group">
+            <header><h1><a title="Light of Hope Home Page" href="http://lightofhopekenya.org">Home</a></h1></header>
+          </section>
+        </nav>
+      </div> <!-- #header -->
+      <div id="main">

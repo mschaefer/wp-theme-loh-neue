@@ -1,5 +1,17 @@
 <?php
 
+function loh_blog_feed() {
+  $recent_posts = wp_get_recent_posts( array('numberposts' => 4) );
+  $items = '';
+  foreach( $recent_posts as $r ){
+    $items .= '<li><a href="' . get_permalink($r["ID"]) . '" title="'.$r["post_title"].'" >' . $r["post_title"].'</a>';
+    $items .= ' &mdash; <time datetime="' . $r['post_date'] . '">' . date('l, F j, Y', strtotime($r["post_date"])) . '</time>';
+    $items .= '<p>'.$r["post_excerpt"].'</p></li>';
+  }
+
+  return "<ul>$items</ul>";
+}
+
 function loh_bucket($page_title) {
   $page = get_page_by_title( $page_title );
 

@@ -24,23 +24,11 @@
   <?php endwhile; // end of the loop. ?>
   </section>
 
-  <article id="events">
-    <h2>Current News and Events</h2>
-    <ol>
-      <li>
-        <time datetime="2012-02-12"><span class="month">Feb</span> 12</time>
-        <a href="#">New York: New Kitchen Fundraiser</a>
-        <span class="location">New York</span>
-      </li>
-      <li>
-        <time datetime="2012-02-12"><span class="month">Nov</span> 30</time>
-        <a href="#">Birthday</a>
-        <span class="location">Anywhere</span>
-      </li>
-    </ol>
-  </article>
-
 </section>
+
+<aside id="mission">
+  <p><?php echo loh_custom_field(get_the_ID(), 'mission'); ?></p>
+</aside>
 
 <div id="secondary-footer">
   <article id="sponsorship-bucket-1" class="bucket">
@@ -48,7 +36,10 @@
   </article>
 
   <aside id="home-feed">
-    Blog Feed
+    <header>
+      <h1>Blog Feed</h1>
+    </header>
+    <?php echo loh_blog_feed(); ?>
   </aside>
 </div> <!-- home-footer --> 
 

@@ -40,9 +40,14 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="<?php echo $body_class; ?>">
+<!--[if lt IE 7]> <body class="ie ie6 lte9 lte8 lte7 <?php echo $body_class ?>"> <![endif]-->
+<!--[if IE 7]> <body class="ie ie7 lte9 lte8 lte7 <?php echo $body_class ?>"> <![endif]-->
+<!--[if IE 8]> <body class="ie ie8 lte9 lte8 <?php echo $body_class ?>"> <![endif]-->
+<!--[if IE 9]> <body class="ie ie9 lte9 <?php echo $body_class ?>"> <![endif]-->
+<!--[if gt IE 9]> <body class="ie <?php echo $body_class ?>"> <![endif]-->
+<!--[if !IE]><!--> <body class="<?php echo $body_class ?>"> <!--<![endif]-->
   <div id="content">
-    <a name="top">Top of Page</a>
+    <a id="topofpage" name="top">Top of Page</a>
     <div id="header">
       <a id="logo" href="<?php echo home_url(); ?>" title="LOH Home"><h1>Light of Hope</h1></a>
 

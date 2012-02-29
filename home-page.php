@@ -33,11 +33,12 @@
 <div id="secondary-footer">
   <article id="sponsorship-bucket-1" class="bucket">
     <?php loh_bucket('Home Page: Sponsorship Bucket 1'); ?>
+    <p><?php loh_sponsorship_link_for('Home Page: Sponsorship Bucket 1') ?></p>
   </article>
 
   <aside id="home-feed">
     <header>
-      <h1>Blog Feed</h1>
+      <h1><a href="<?php echo loh_custom_field(get_the_ID(), 'blog-feed-url'); ?>" title="Light of Hope Blog">Blog Feed</a></a></h1>
     </header>
     <?php echo loh_blog_feed(); ?>
   </aside>

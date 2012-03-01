@@ -69,7 +69,7 @@ table {
 h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
 h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
 h3 { font-size: 1.125em; /* 16x1.125=18 */ }
-h4 { font-size: 0.875em; /* 16x0.875=14 */ }
+h4 { font-size: 0.875em; font-style: italic; /* 16x0.875=14 */ }
 
 h1,
 h2,
@@ -77,7 +77,7 @@ h3,
 h4 { margin-bottom: 0.5em; }
 
 p, 
-li { font-size: 0.75em;  /* 16x0.75=12 */ }
+li { font-size: 0.875em;  /* 16x0.75=12 */ }
 
 p, 
 li {
@@ -502,6 +502,13 @@ body {
           display: inline;
         }
 
+#hidden-scripts {
+  display: none;
+  height: 0px;
+  width: 0px;
+  line-height: 0px;
+}
+
 #secondary-menu {
   width: 13.5%;
   float: left;
@@ -677,7 +684,7 @@ body {
         top: 25px;
       }
 
-        .lte8 #secondary-footer .bucket h1 {
+        .lte7 #secondary-footer .bucket h1 {
           margin-left: 0px;
         }
 
@@ -727,7 +734,7 @@ body {
       }
 
 .post {  
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
   .post .post-header .post-category {
@@ -737,7 +744,7 @@ body {
   }
 
   .post .post-header .post-title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
     body.single-post .post .post-header .post-title {

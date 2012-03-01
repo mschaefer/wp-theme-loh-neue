@@ -20,5 +20,10 @@
 ?><script src="<?php echo $js; ?>"></script><?php
     }
   ?>
+  <div id="hidden-scripts">
+    <ul>
+        <?php loh_hidden_scripts_sidebar(); ?>
+    </ul>
+  </div>
 </body>
 </html>

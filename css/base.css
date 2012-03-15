@@ -813,15 +813,167 @@ body {
   #content {
     width: 100%; /* this should happen when the size of the window matches the width of content */
   }
+
+
 } /* media query: 960 */
 
 @media screen and (max-width: 768px) {
+  #header #primary-menu {
+    float: left;
+    left: auto;
+    margin-left: 205px;
+    width: 55%;
+  }
+
+  body.home #main #mission { 
+    display: none;
+  }
+
+  body.home #home-primary {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+    #home-slider {
+      width: 100%;
+      overflow: hidden;
+    }
+
+      #home-slider .nivo-controlNav-container {
+        left: 0px;
+        right: auto;
+      }
+
+  #home-primary #home-content {
+    margin-top: .5em;
+  }
+
+
 } /* media query: 768 */
 
 @media screen and (max-width: 480px) {
+
+  body.home #content {
+    background-image: url("images/sky-internal.jpg");
+    background-position: -30px -20px;
+  }
+
+  #header #logo {
+    height: 60px;
+  }
+
+  #header #primary-menu {
+    position: static;
+    float: left;
+    clear: both;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin-left: 0px;
+  }  
+
+  #header .donate-menu {
+    float: right;
+    clear: left;
+    position: static;
+    right: auto;
+    top: auto;
+  }
+
+    #primary-menu .link-group {
+      width: 50%;
+      padding-bottom: 0.15em;
+    }
+
+    #primary-menu .link-group h1 {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    #primary-menu ul {
+      background-color: rgba(255, 255, 255, 1);
+      left: 0px;
+      width: 100%;
+    }
+
+  #header #social-menu {
+    border-left: none;
+  }
+
+  #home-primary {
+    margin-top: .5em;
+  }
+
+  #home-primary #home-content {
+    width: 100%;
+  }
+
+  #secondary-footer #sponsorship-bucket-1 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #secondary-footer > * {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+    #secondary-footer .bucket > p:nth-child(3) {
+      margin-top: 1em;
+    }
+
+  #secondary-footer #home-feed li {
+    margin-bottom: .25em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+  }
+
+  #footer .link-group {
+    clear: left;
+    padding-right: 0;
+    margin-bottom: .5em;
+  }
+
+  #footer .donate-menu {
+    clear: left;
+  }
+  
+
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
+  #primary-menu .link-group {
+    width: 100%;
+    clear: left;
+  }
+
+  #primary-menu .link-group h1 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+    #primary-menu ul {
+      left: auto;
+      top: auto;
+      position: static;
+      display: none;
+      visibility: visible;
+      width: 100%;
+    }
+
+      #primary-menu .link-group.active ul {
+        display: block;
+        transition-property: height;
+      }
+
+    #secondary-footer #sponsorship-bucket-1 .donate-button {
+      float: right;
+    }
+
+  #header .donate-menu {
+  }
 } /* media query: 320 */
 
 /* 1200px and up */

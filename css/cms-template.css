@@ -1,0 +1,239 @@
+
+
+#header {
+  height: 4.5em;
+}
+
+#main {
+  width: 73%;
+  float: right;
+  clear: right;
+  margin: 2em 3% 2em 1.5%;
+}
+
+/* Neon-specific Styles */
+#main table.autoCommon {
+  margin-bottom: 0.5em;
+}
+
+form table td {
+  padding: .35em 2px;
+  vertical-align: top;
+}
+
+  form table tr .neonFieldLabel sup {
+    color: #2f2f2f;
+  }
+
+  .neonBody {
+    margin-bottom: .5em;
+  }
+    td.neonBody,
+    .neonFieldLabel,
+    .neonFieldText {
+      line-height: 1.5em;
+    }
+
+    span.neonBody {
+      display: block;
+    }
+
+  form tr.curFocus td {
+    font-style: italic;
+  }
+
+.neon2Header {
+  display: block;
+  font-size: 2.25em;
+  padding-bottom: 1em;
+}
+
+.neon2Title {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+.necTableBig td {
+  line-height: 30px;
+}
+
+/* Much of the following is a stripped set of rules from the base theme from Neon */
+
+#main ol, #main ul {
+  list-style: none outside none;
+}
+
+:focus {
+  outline: 0 none;
+}
+
+#main ins {
+  text-decoration: none;
+}
+
+#main del {
+  text-decoration: line-through;
+}
+
+#main test {
+  border-style: dotted;
+  border-width: 0.1em;
+}
+
+#main table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#main table, #main td, #main th {
+  white-space: inherit !important;
+}
+
+#main table {
+  margin: 0 auto;
+}
+
+#main {
+  word-wrap: break-word;
+}
+
+#main input, #main select, #main textarea {
+    vertical-align: middle;
+    width: auto !important;
+}
+
+#main td.curFocus {
+  background: none repeat scroll 0 0 #d5d5d5;
+}
+
+#main table.autoCommon {
+    width: 100% !important;
+}
+
+#main .col-1 {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 100 !important;
+}
+
+#main td {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#main table.reportLook td {
+    color: #000000;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+#main .table_bg_caption {
+    background-color: #CCCCCC !important;
+}
+#main .table_bg_light {
+    background-color: #EEEEEE !important;
+}
+#main .table_bg_dark {
+    background-color: #DDDDDD !important;
+}
+#main .neonValidate {
+    color: red !important;
+}
+#main .photo_app {
+    color: red;
+}
+#main div.jobPost, #main table.reportLook {
+    background-color: #000000 !important;
+}
+
+#main #buttonDisplay {
+    padding-top: 10px;
+}
+
+#main .neonTableCell {
+    padding: 0;
+}
+
+#main .neonTableHeaderCell {
+    color: #666666;
+    font-weight: bold;
+}
+#main .neon2Title {
+    padding: 15px 0 10px;
+}
+#main h3 {
+    margin: 20px 0;
+}
+#main table.reportLook {
+    border: medium none;
+    font-size: 12px !important;
+}
+#main .reportLook0 td, #main .reportLookHilite td {
+    border: medium none;
+}
+#main table.reportLook img {
+    border: 0 none;
+    text-align: left;
+    vertical-align: middle;
+}
+#main #photoDisplay td {
+    padding: 5px;
+}
+#main table.reportLook tr th, #main table.reportLook tr td {
+    padding: 0 !important;
+}
+#main table.reportLook th {
+    background: url("/np/neon_trial_basic/icon-sort.gif") no-repeat scroll 0 0 #EBEBEB;
+    color: #666666;
+    font-weight: bold;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+}
+#main table.reportLook, #main table.reportLook td, #main table.reportLook th {
+    white-space: nowrap !important;
+}
+
+#main textarea {
+    min-height: 80px;
+    overflow: auto;
+    resize: vertical;
+}
+
+
+#main .membershipDirectory {
+    width: 100%;
+}
+#main table.search td {
+    border: medium none !important;
+}
+#main .out_table_S td {
+    padding: 10px;
+}
+#main .shopping_C td {
+    padding: 0 5px;
+}
+#main .shopping_C td p {
+    line-height: 25px;
+}
+#main .neonFieldLabel sup {
+    line-height: 30px;
+}
+#main .neonCheckbox {
+    line-height: 20px !important;
+}
+
+#main td {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+#main table, 
+#main td, 
+#main  th {
+  white-space: inherit !important;
+}
+

@@ -852,7 +852,7 @@ body {
 
 } /* media query: 768 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
   body.home #content {
     background-image: url("images/sky-internal.jpg");
@@ -941,7 +941,7 @@ body {
   }
   
 
-} /* media query: 480 */
+} /* media query: 600 */
 
 @media screen and (max-width: 320px) {
   #primary-menu .link-group {

@@ -40,3 +40,43 @@ body.donate .column_right {
           height: 85px;
           border: 10px solid #ffffff;
         }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+} /* media query: 1024 */
+
+@media screen and (max-width: 960px) {
+} /* media query: 960 */
+
+@media screen and (max-width: 768px) {
+  #main a.donate-button {
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.donate .bucket > *:last-child {
+/*    margin-left: 0px;*/
+  }
+
+} /* media query: 768 */
+
+@media screen and (max-width: 600px) {
+  body.donate .column_left,
+  body.donate .column_right {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+} /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */
+
+/* 1200px and up */
+@media screen and (min-width: 1200px) {
+} /* media query: 1200*/

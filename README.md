@@ -61,3 +61,7 @@ The sponsorship buckets on the donation page are pulled from the pages named "Ho
 ## Blog/Blog Post Base Template
 
 This contains a Wordpress dynamic sidebar called "Posts Sidebar"
+
+--------------------------
+
+Copyright Matt Schaefer under the GNU GPL 2, with the exception of the Light of Hope logos, which are copyright Lighthouse Ministries International, all rights reserved.

@@ -27,9 +27,11 @@ All items with class "caption" will be included in the slider caption.
 Like the slider images, bucket content is pulled from other pages with particular names. The home page includes content from the page "Home Page: Sponsorship Bucket 1".
 
 Bucket pages have custom field properties:
-bucket-type: the text displayed at the top of the bucket
-sponsorship-link: the url to the donation page for this sponsorship bucket
-sponsorship name: the name of the person in the sponsorship bucket
+- bucket-type: the text displayed at the top of the bucket
+- sponsorship-link: the url to the donation page for this sponsorship bucket
+- sponsorship name: the name of the person in the sponsorship bucket
+- blog-feed-text: text for the link to the blog in the secondary footer
+- blog-feed-url: url for the link to the blog in the secondary footer
 
 ## Menus
 

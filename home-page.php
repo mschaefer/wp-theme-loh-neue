@@ -38,7 +38,11 @@
 
   <aside id="home-feed">
     <header>
-      <h1><a href="<?php echo loh_custom_field(get_the_ID(), 'blog-feed-url'); ?>" title="Light of Hope Blog">Blog Feed</a></a></h1>
+      <h1>
+        <a href="<?php echo loh_custom_field(get_the_ID(), 'blog-feed-url'); ?>" title="Light of Hope Blog">
+          <?php echo loh_custom_field(get_the_ID(), 'blog-feed-text', 'Our Blog'); ?>
+        </a>
+      </h1>
     </header>
     <?php echo loh_blog_feed(); ?>
   </aside>

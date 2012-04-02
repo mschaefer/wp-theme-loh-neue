@@ -7,6 +7,7 @@ include('functions/menus.php');
 include('functions/pages.php');
 include('functions/posts.php');
 include('functions/slider.php');
+include('functions/shortcodes.php');
 include('functions/sponsorship.php');
 include('functions/utility.php');
 ?>

@@ -528,13 +528,37 @@ body {
       border-bottom: 1px solid rgba(153, 164, 170, .5);
     }
 
-#page-primary, .post {
+#page-primary,
+.post {
   width: 77.5%;
   float: right;
   clear: right;
   margin: 2em 3% auto 1.5%;
 }
 
+  #page-primary .alignleft,
+  .post .alignleft {
+    float: left;
+    margin-right: 3%;
+  }
+
+  #page-primary .alignright,
+  .post .alignright {
+    float: right;
+    margin-left: 3%;
+  }
+
+  #page-primary .aligncenter,
+  .post .alightcenter {
+    display: block;
+    margin: auto;
+  }
+
+  #page-primary img,
+  .post img {
+    max-width: 100%;
+  }
+  
 #home-primary {
   width: 70.5%;
   clear: left;
@@ -755,17 +779,6 @@ body {
     font-size: 0.857em;
   }
 
-  .post .alignleft {
-    float: left;
-  }
-  .post .alignright {
-    float: right;
-  }
-  .post .alightcenter {
-    display: block;
-    margin: auto;
-  }
-
   .post .post-footer {
     margin-top: 0.5em;
     font-style: italic;
@@ -899,6 +912,16 @@ body {
 
   #header #social-menu {
     border-left: none;
+  }
+
+  #page-primary,
+  .post,
+  #secondary-menu {
+    display: block;
+    float: none;
+    clear: left;
+    margin: 1em 3% auto 3%;
+    width: 94%;
   }
 
   #home-primary {

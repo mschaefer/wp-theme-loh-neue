@@ -1,0 +1,102 @@
+#about-us-mission,
+#about-us-meet-the-girls {
+  float: right;
+  clear: right;
+  width: 36%;
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-bottom: 1em; 
+  padding: 2%;
+  background-color: #e1ecf4; /* fallback background */
+  background-color: rgba(255, 255, 255, .5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#about-us-mission h1,
+#about-us-meet-the-girls h1 {
+  font-size: 1.125em;
+}
+
+  #about-us-meet-the-girls header {}
+
+  .bucket {
+    padding-top: 0px;
+  }
+
+    .bucket header {
+      float: none;
+      display: block;
+    }
+
+    .bucket > * {
+      float: none;
+    }
+
+    .bucket > :nth-child(2) {
+      float: left;
+      margin-right: 5px;
+    }
+
+    .bucket .bucket-type {
+      display: none;
+    }
+
+    .bucket img {
+      position: static;
+      width: 85px;
+      height: 85px;
+      border: 10px solid #ffffff;
+    }
+
+    .bucket h1 {
+      position: static;
+    }
+
+    .bucket > h1 {
+      clear: right;
+    }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+} /* media query: 1024 */
+
+@media screen and (max-width: 960px) {
+} /* media query: 960 */
+
+@media screen and (max-width: 768px) {
+} /* media query: 768 */
+
+@media screen and (max-width: 600px) {
+  #about-us-mission,
+  #about-us-meet-the-girls {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .bucket > :nth-child(2) {
+    display: block;
+    float: none;
+    margin-right: 0px;
+  }
+} /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+  #about-us-mission,
+  #about-us-meet-the-girls {
+    display: block;
+    float: none;
+    clear: both;
+    width: 96%;
+    margin-left: 0%;
+    margin-top: 0%;  
+  }
+} /* media query: 320 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */
+
+/* 1200px and up */
+@media screen and (min-width: 1200px) {
+} /* media query: 1200*/

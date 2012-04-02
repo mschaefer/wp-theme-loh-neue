@@ -13,6 +13,10 @@ function loh_blog_feed() {
 }
 
 function loh_bucket($page_title) {
+  echo loh_get_bucket($page_title);
+}
+
+function loh_get_bucket($page_title) {
   $page = get_page_by_title( $page_title );
 
   if( $page ) {
@@ -20,7 +24,10 @@ function loh_bucket($page_title) {
 
     $bucket_type = array_key_exists('bucket-type', $custom_fields) ? $custom_fields['bucket-type'][0] : '';
 
-    echo apply_filters('the_content', $page->post_content) ."<span class=\"bucket-type\">$bucket_type</span>";
+    return apply_filters('the_content', $page->post_content) ."<span class=\"bucket-type\">$bucket_type</span>";
+  }
+  else {
+    return '';
   }
 }
 

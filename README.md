@@ -56,6 +56,13 @@ A link to the home page behaves the same in this menu as it does in the primary 
 
 This contains a WordPress dynamic sidebar called Footer Credits. It also contains a Hidden Scripts sidebar that allows you to add any JS you want at the end of each page.
 
+## About Us Page
+
+The following shortcodes can be used on the about us page:
+
+- [about-us-mission] : The Mission section of the about us page; use the about-us-mission-title field to set the title, and the about-us-mission-content field to set the content of the mission section.
+- [about-us-meet-the-girls] : The Meet the Girls section of the about us page. It will pull in the Sponsorship 1 bucket; the custom field about-us-meet-the-girls-url will serve as the URL of the Meet the Girls heading link.
+
 ## Donation Page
 
 The sponsorship buckets on the donation page are pulled from the pages named "Home Page: Sponsorship Bucket 1" and "Home Page: Sponsorship Bucket 2". See the home page documentation for more information about these buckets.

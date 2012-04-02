@@ -37,6 +37,7 @@ body.donate .column_right {
 
       body.donate .bucket p:first-child {
         margin-left: 0px;
+        width: 110px;
       }
 
         body.donate .bucket img {

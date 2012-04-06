@@ -571,7 +571,9 @@ body {
   }
 
   #home-primary p,
-  #home-primary li {
+  #home-primary li,
+  #page-primary p,
+  #page-primary li {
     font-family: Cantarell, sans-serif;
   }
 

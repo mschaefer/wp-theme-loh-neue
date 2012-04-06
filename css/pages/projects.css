@@ -205,3 +205,100 @@
 
       #secondary-footer #more-projects a { text-decoration: none; }
       #secondary-footer #more-projects a:hover { text-decoration: underline; }
+
+@media screen and (max-width: 600px) {
+
+  #project-slider {
+    border-width: 4px;
+  }
+
+  #project-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #donation-box {
+    clear: both;
+    float: none;
+    display: block;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 60%;
+  }
+
+  #secondary-footer .project {
+    clear: right;
+    float: right;
+    margin: 1em 3% auto 3%;
+    width: 94%;
+  }
+
+    #secondary-footer .project img {
+      float: left;
+      width: 31.3%;
+      border-width: 4px;
+    }
+
+      #secondary-footer h2,
+      #secondary-footer p {
+        width: 63.6%;
+      }
+
+    #secondary-footer #more-projects {
+      right: 3%;
+    }
+} /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+  #donation-box {
+    width: 75%;
+  }
+
+  #secondary-footer .project header {
+    float: none;
+  }
+
+    #secondary-footer .project h1 {
+      margin-bottom: 0.5em;
+    }
+
+  #secondary-footer .project img {
+    display: block;
+    float: none;
+    width: 98%;
+    margin-bottom: .5em;
+  }
+
+    #secondary-footer h2,
+    #secondary-footer p {
+      float: none;
+      margin-left: 0;
+      width: 100%;
+    }
+
+      #secondary-footer h2 .heading-category,
+      #secondary-footer h2 .heading-category:after {
+        display: none;
+      }
+
+  #secondary-footer #more-projects {
+    position: static;
+    text-align: center;
+  }
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+  #project-content .column {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    border-left: none;
+  }
+
+  #donation-box {
+    width: 96%;
+    padding: 2%;
+  }
+} /* media query: 480 */

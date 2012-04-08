@@ -7,12 +7,13 @@
 ?>
 <?php 
   $body_class = 'home';
-  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js', 
+  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js',
+                   get_stylesheet_directory_uri() . '/js/components/slider.js', 
                    get_stylesheet_directory_uri() . '/js/pages/home.js' );
   get_header(); 
 ?>
 <section id="home-primary">
-  <div id="home-slider" class="slider-wrapper theme-loh">
+  <div id="slider-container" class="slider-wrapper theme-loh">
     <div class="ribbon"></div>
     <?php loh_home_slider(); ?>
     <div id="slider" class="nivoSlider"></div>

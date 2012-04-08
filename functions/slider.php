@@ -1,8 +1,15 @@
 <?php
 
 function loh_home_slider() {
-  for ($i = 1; $i <= 11; $i++)
+  for ($i = 1; $i <= 11; $i++) {
     loh_slider_content("Home Page: Slider $i");
+  }
+}
+
+function loh_projects_slider() {
+  for ($i = 1; $i <= 11; $i++) {
+    loh_slider_content("Projects: Slider $i");
+  }
 }
 
 function loh_slider_content($page_title) {

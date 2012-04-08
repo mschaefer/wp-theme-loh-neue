@@ -1,9 +1,6 @@
-#project-slider {
+#slider-container {
+  margin-bottom: 3.75em;
   width: 98%;
-  height: 300px;
-  border: 8px #f2efe7 solid;
-  background-color: gray;
-  margin-bottom: 1em;
 }
 
 #project-content {
@@ -206,11 +203,14 @@
       #secondary-footer #more-projects a { text-decoration: none; }
       #secondary-footer #more-projects a:hover { text-decoration: underline; }
 
-@media screen and (max-width: 600px) {
-
-  #project-slider {
-    border-width: 4px;
+@media screen and (max-width: 768px) {
+  #slider-container {
+    margin-bottom: 1em;
+    width: 98%;
   }
+} /* media scren max-width: 768;
+
+@media screen and (max-width: 600px) {
 
   #project-content {
     width: 100%;

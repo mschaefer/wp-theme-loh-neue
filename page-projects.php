@@ -8,7 +8,9 @@
 <?php 
   $body_class = 'projects';
   $page_css = array(get_stylesheet_directory_uri() . '/css/pages/projects.css');
-  $page_js = array(get_stylesheet_directory_uri() . '/js/pages/projects.js' );
+  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js',
+                   get_stylesheet_directory_uri() . '/js/components/slider.js',
+                   get_stylesheet_directory_uri() . '/js/pages/projects.js' );
   get_header();
 ?>
 
@@ -21,7 +23,12 @@
 	  <?php get_template_part( 'content', 'page' ); ?>
   <?php endwhile; // end of the loop. ?>
 -->
-  <div id="project-slider" class="slider-wrapper theme-loh"></div>
+  <h1>Projects</h1>
+  <div id="slider-container" class="slider-wrapper theme-loh">
+    <div class="ribbon"></div>
+    <?php loh_projects_slider(); ?>
+    <div id="slider" class="nivoSlider"></div>
+  </div>
 
   <div id="project-content">
     <div class="column column-full">

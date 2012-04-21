@@ -11,8 +11,8 @@ function loh_shortcode_about_us_mission() {
 }
 
 function loh_shortcode_about_us_meet_the_girls() {
-  return '<aside id="about-us-meet-the-girls" class="bucket">' .
+  return '<article id="about-us-meet-the-girls" class="bucket">' .
     '<header><h1><a href="' . loh_custom_field(get_the_ID(), 'about-us-meet-the-girls-url') . '" title="Meet the Girls of LOH">Meet the Girls</a></h1></header>' .
-    loh_get_bucket('Home Page: Sponsorship Bucket 1') .
-  '</aside>';
+    loh_get_bucket('About Us: Meet the Girls Bucket 1') .
+  '</article>';
 }

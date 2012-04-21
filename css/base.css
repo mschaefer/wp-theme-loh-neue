@@ -529,7 +529,8 @@ body {
     }
 
 #page-primary,
-.post {
+.post,
+.category-title {
   width: 77.5%;
   float: right;
   clear: right;
@@ -558,6 +559,10 @@ body {
   .post img {
     max-width: 100%;
   }
+
+.category-title {
+  margin-top: 1em;
+}
   
 #home-primary {
   width: 70.5%;
@@ -916,12 +921,17 @@ body {
 
   #page-primary,
   .post,
-  #secondary-menu {
+  #secondary-menu,
+  .category-title {
     display: block;
     float: none;
     clear: left;
     margin: 1em 3% auto 3%;
     width: 94%;
+  }
+
+  .category-title {
+    margin-top: .5em;
   }
 
   #home-primary {

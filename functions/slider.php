@@ -12,6 +12,12 @@ function loh_projects_slider() {
   }
 }
 
+function loh_projects_in_progress_slider() {
+  for ($i = 1; $i <= 11; $i++) {
+    loh_slider_content("Projects in Progress: Slider $i");
+  }
+}
+
 function loh_slider_content($page_title) {
   $page = get_page_by_title( $page_title );
 

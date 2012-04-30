@@ -4,7 +4,7 @@ get_header();
 get_sidebar();
 
 if ( have_posts() ) : ?>
-
+  <h1 class="category-title">Our Blog</h1>
   <?php while ( have_posts() ) : the_post(); ?>
     <?php get_template_part( 'content', get_post_format() ); ?>
   <?php endwhile; ?>

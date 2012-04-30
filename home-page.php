@@ -7,12 +7,13 @@
 ?>
 <?php 
   $body_class = 'home';
-  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js', 
+  $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js',
+                   get_stylesheet_directory_uri() . '/js/components/slider.js', 
                    get_stylesheet_directory_uri() . '/js/pages/home.js' );
   get_header(); 
 ?>
 <section id="home-primary">
-  <div id="home-slider" class="slider-wrapper theme-loh">
+  <div id="slider-container" class="slider-wrapper theme-loh">
     <div class="ribbon"></div>
     <?php loh_home_slider(); ?>
     <div id="slider" class="nivoSlider"></div>
@@ -38,7 +39,11 @@
 
   <aside id="home-feed">
     <header>
-      <h1><a href="<?php echo loh_custom_field(get_the_ID(), 'blog-feed-url'); ?>" title="Light of Hope Blog">Blog Feed</a></a></h1>
+      <h1>
+        <a href="<?php echo loh_custom_field(get_the_ID(), 'blog-feed-url'); ?>" title="Light of Hope Blog">
+          <?php echo loh_custom_field(get_the_ID(), 'blog-feed-text', 'Our Blog'); ?>
+        </a>
+      </h1>
     </header>
     <?php echo loh_blog_feed(); ?>
   </aside>

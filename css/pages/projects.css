@@ -1,0 +1,308 @@
+#slider-container {
+  margin-bottom: 3.75em;
+  width: 98%;
+}
+
+#project-content {
+  float: left;
+  width: 62.6%;
+  margin-right: 1.5%;
+  margin-bottom: 1em;
+}
+
+  .projects-in-progress #project-content {
+    width: 96%;
+  }
+
+  #project-content .column {
+    float: left;
+    width: 42.5%;
+  }
+
+    #project-content .column-full {
+      width: 100%;
+    }
+
+    #project-content .column-left {
+      margin-right: 1.25%;
+      padding-right: 3%;
+    }
+
+    #project-content .column-right {
+      margin-left: 1.25%;
+      padding-left: 3%;
+      border-left: 1px solid #afbdc8;
+    }
+
+    #project-content h1 {
+      font-size: 1.5em;
+    }
+
+      #project-content h1 .heading-category {
+        display: block;
+        font-family: Cantarell, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.5em;
+      }      
+
+      #project-content h2 {
+        font-family: Cantarell, sans-serif;
+        text-transform: uppercase;
+        font-size: .875em;
+      }
+
+  #donation-box {
+    float: right;
+    width: 29.3%;
+    margin-left: 1.5%;
+    padding: 1%;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-style: italic;
+  }
+
+    #donation-box h1 {
+      font-size: 1.125em;
+    }
+
+    #donation-box #progress-bar {
+      position: relative;
+      margin: auto;
+      margin-bottom: .25em;
+      width: 98.5%;
+      height: 1em;
+      border: 1px solid #000000;
+    }
+
+      #donation-box #progress {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 75%;
+        background-color: #b51a16;
+      }
+
+    #donation-box #progress-scale {
+      display: table;
+      width: 100%;
+      margin-bottom: .875em;
+    }
+
+      body.lte7 #donation-box #progress-scale {
+        display: block;
+      }
+
+    #donation-box #progress-scale ol {
+      display: table-row;
+      list-style-type: none;
+      padding-left: 0px;
+      width: 100%;
+    }
+
+      body.lte7 #donation-box #progress-scale ol {
+        display: block;
+      }
+
+    #donation-box #progress-scale li {
+      display: table-cell;
+      color: #ffffff;
+      font-size: .650em;
+      font-style: normal;
+      font-family: Cantarell, sans-serif;
+      text-align: center;
+    }
+
+    #donation-box p {
+      font-family: Georgia, 'Bitstream Charter', serif;
+    }
+
+      body.lte7 #donation-box #progress-scale li { display: none; }
+      body.lte7 #donation-box #progress-scale li:last-child { display: inline; float: right; }
+
+      #donation-box #progress-scale li:first-child { text-align: left; }
+      #donation-box #progress-scale li:last-child { text-align: right; }
+
+    #donation-box .donate-button {
+      float: right;
+      clear: both;
+      font-style: normal;
+    }
+
+#secondary-footer {
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: auto;
+}
+
+  #secondary-footer .project {
+    clear: right;
+    float: right;
+    margin: 2em 3% auto 1.5%;
+    width: 77.5%;
+  }
+
+    #secondary-footer .project {
+      margin-top: .5em;
+    }
+
+    #secondary-footer .project header {
+      float: left;
+      width: 100%;
+    }
+
+      #secondary-footer .project h1 {
+        margin-bottom: .875em;
+        font-size: 1.5em;
+      }
+
+    #secondary-footer .project img {
+      float: left;
+      width: 31.3%;
+      border: 8px #f2efe7 solid;
+    }
+
+      #secondary-footer h2 {
+        font-family: Georgia, 'Bitstream Charter', serif;
+        margin-bottom: .35em;
+      }
+
+      #secondary-footer h2,
+      #secondary-footer p {
+        float: left;
+        margin-left: 3%;
+        width: 40%;
+      }
+
+        #secondary-footer h2 .heading-category {
+          display: block;
+          margin-bottom: .35em;
+          font-family: Cantarell, sans-serif;
+          text-transform: uppercase;
+          font-size: 0.5em;
+        }
+
+        #secondary-footer h2 .heading-category:after {
+          content: ':';
+        }
+
+        #secondary-footer h2 a {
+          text-decoration: none;
+        }
+
+    #secondary-footer #more-projects {
+      position: absolute;
+      right: 22.5%;
+      top: 2em;
+      width: auto;
+      margin: auto;
+      font-family: Cantarell, sans-serif;
+      text-transform: uppercase;
+    }
+
+      #secondary-footer #more-projects a { text-decoration: none; }
+      #secondary-footer #more-projects a:hover { text-decoration: underline; }
+
+@media screen and (max-width: 768px) {
+  #slider-container {
+    margin-bottom: 1em;
+    width: 98%;
+  }
+} /* media scren max-width: 768; */
+
+@media screen and (max-width: 600px) {
+
+  #project-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #donation-box {
+    clear: both;
+    float: none;
+    display: block;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 60%;
+  }
+
+  #secondary-footer .project {
+    clear: right;
+    float: right;
+    margin: 1em 3% auto 3%;
+    width: 94%;
+  }
+
+    #secondary-footer .project img {
+      float: left;
+      width: 31.3%;
+      border-width: 4px;
+    }
+
+      #secondary-footer h2,
+      #secondary-footer p {
+        width: 63.6%;
+      }
+
+    #secondary-footer #more-projects {
+      right: 3%;
+    }
+} /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+  #donation-box {
+    width: 75%;
+  }
+
+  #secondary-footer .project header {
+    float: none;
+  }
+
+    #secondary-footer .project h1 {
+      margin-bottom: 0.5em;
+    }
+
+  #secondary-footer .project img {
+    display: block;
+    float: none;
+    width: 98%;
+    margin-bottom: .5em;
+  }
+
+    #secondary-footer h2,
+    #secondary-footer p {
+      float: none;
+      margin-left: 0;
+      width: 100%;
+    }
+
+      #secondary-footer h2 .heading-category,
+      #secondary-footer h2 .heading-category:after {
+        display: none;
+      }
+
+  #secondary-footer #more-projects {
+    position: static;
+    text-align: center;
+  }
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+  #project-content .column {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    border-left: none;
+  }
+
+  #donation-box {
+    width: 96%;
+    padding: 2%;
+  }
+} /* media query: 480 */

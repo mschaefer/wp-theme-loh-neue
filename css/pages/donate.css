@@ -1,5 +1,9 @@
 body.donate {}
 
+#header .donate-menu {
+  display: none;
+}
+
 body.donate .column {}
 
 body.donate .column_left {
@@ -33,6 +37,7 @@ body.donate .column_right {
 
       body.donate .bucket p:first-child {
         margin-left: 0px;
+        width: 110px;
       }
 
         body.donate .bucket img {
@@ -40,6 +45,10 @@ body.donate .column_right {
           height: 85px;
           border: 10px solid #ffffff;
         }
+
+#footer .donate-menu a {
+  display: none;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
@@ -54,27 +63,76 @@ body.donate .column_right {
     margin-left: auto;
     margin-right: auto;
   }
-
-  body.donate .bucket > *:last-child {
-/*    margin-left: 0px;*/
-  }
-
 } /* media query: 768 */
 
 @media screen and (max-width: 600px) {
+
+  #secondary-menu {
+    clear: both;
+    margin: 1em 3% auto 3%;
+    width: 94%;
+  }
+
+  #page-primary, .post {
+    margin: 1em 3% auto 3%;
+    width: 94%;
+  }
+
   body.donate .column_left,
   body.donate .column_right {
     display: block;
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
+    border-left: 0px;
   }
 } /* media query: 600 */
 
 @media screen and (max-width: 480px) {
+  body.donate .bucket > *:last-child {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #main a.donate-button {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+
+  body.donate .bucket {
+    clear: both;
+    padding-top: 0px;
+  }
+
+    body.donate .bucket h1 {
+      position: static;
+      float: left;
+      clear: none;
+      margin-left: 5px;
+      margin-top: 1em;
+    }
+
+    body.donate .bucket > * {
+      float: left;
+      clear: left;
+      margin-left: 0px;
+    }
+    
+    .bucket p:first-child {
+      position: static;
+      float: left;
+      width: 105px;
+      height: 105px;
+    }
+
+    body.donate .bucket .bucket-type {
+      margin-left: 110px;
+    }
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
+  
 } /* media query: 320 */
 
 /* 1200px and up */

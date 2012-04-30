@@ -27,9 +27,11 @@ All items with class "caption" will be included in the slider caption.
 Like the slider images, bucket content is pulled from other pages with particular names. The home page includes content from the page "Home Page: Sponsorship Bucket 1".
 
 Bucket pages have custom field properties:
-bucket-type: the text displayed at the top of the bucket
-sponsorship-link: the url to the donation page for this sponsorship bucket
-sponsorship name: the name of the person in the sponsorship bucket
+- bucket-type: the text displayed at the top of the bucket
+- sponsorship-link: the url to the donation page for this sponsorship bucket
+- sponsorship name: the name of the person in the sponsorship bucket
+- blog-feed-text: text for the link to the blog in the secondary footer
+- blog-feed-url: url for the link to the blog in the secondary footer
 
 ## Menus
 
@@ -53,6 +55,15 @@ A link to the home page behaves the same in this menu as it does in the primary 
 ## Footer
 
 This contains a WordPress dynamic sidebar called Footer Credits. It also contains a Hidden Scripts sidebar that allows you to add any JS you want at the end of each page.
+
+## About Us Page
+
+The following shortcodes can be used on the about us page:
+
+- [about-us-mission] : The Mission section of the about us page; use the about-us-mission-title field to set the title, and the about-us-mission-content field to set the content of the mission section.
+- [about-us-meet-the-girls] : The Meet the Girls section of the about us page. It will pull in the Sponsorship 1 bucket; the custom field about-us-meet-the-girls-url will serve as the URL of the Meet the Girls heading link.
+
+This page pulls a bucket from "About Us: Meet the Girls Bucket 1" for the Meet the Girls bucket.
 
 ## Donation Page
 

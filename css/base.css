@@ -829,8 +829,7 @@ body {
   }
 
     #slider {
-      width:100%; /* 650px */
-      height:300px;
+      width:640px;
       border: 10px solid #ffffff;
       background-color: gray;
     }

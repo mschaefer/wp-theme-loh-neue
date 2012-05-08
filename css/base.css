@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -58,7 +58,7 @@ table {
   link blue: #195091
   month blue: #6496bb
   footer brown: #43311d
-  donate red: #b51a16 
+  donate red: #b51a16
   primary-menu faux translucency: #e1ecf4;
   sandstone: #d7d1c1;
 */
@@ -76,10 +76,10 @@ h2,
 h3,
 h4 { margin-bottom: 0.5em; }
 
-p, 
+p,
 li { font-size: 0.875em;  /* 16x0.75=12 */ }
 
-p, 
+p,
 li {
   line-height: 1.5em;
 }
@@ -113,7 +113,7 @@ a#topofpage {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-ul.donate-menu, 
+ul.donate-menu,
 ul.donate-menu li {
   margin: 0px;
   padding: 0px;
@@ -193,8 +193,8 @@ body {
     vertical-align: super;
   }
 
-#header, 
-#footer, 
+#header,
+#footer,
 #home-buckets {
   width: 94%;
   clear: both;
@@ -221,7 +221,7 @@ body {
   }
 /*
   #header #subscribe {
-    float: right;   
+    float: right;
   }
 */
   #header .horiz-menu li {
@@ -246,7 +246,7 @@ body {
       .lte8 #social-menu li {
         float: left;
       }
-    
+
     #social-menu a {
       display: inline-block;
       height: 16px;
@@ -306,7 +306,7 @@ body {
           white-space: nowrap;
           background-color: #e1ecf4;
         }
-      
+
         #primary-menu .link-group:last-child h1 {
           margin-right: 0px;
         }
@@ -322,7 +322,7 @@ body {
         background-position: 4px 3px;
       }
 
-      #primary-menu h1, 
+      #primary-menu h1,
       #primary-menu ul {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -341,7 +341,7 @@ body {
         opacity: 0;
         -webkit-box-shadow: 0px 0px 2px 2px rgba(120, 120, 120, .25);
         -moz-box-shadow: 0px 0px 2px 2px rgba(120, 120, 120, .25);
-        box-shadow: 0px 0px 2px 2px rgba(120, 120, 120, .25); 
+        box-shadow: 0px 0px 2px 2px rgba(120, 120, 120, .25);
         z-index: 1000;
       }
 
@@ -407,14 +407,14 @@ body {
           text-decoration: none;
         }
 
-    #primary-menu .active h1, 
-    #primary-menu h1:hover, 
+    #primary-menu .active h1,
+    #primary-menu h1:hover,
     #primary-menu li:hover {
       background-color: #ffffff;
     }
 
-    .lte8 #primary-menu .active h1, 
-    .lte8 #primary-menu h1:hover, 
+    .lte8 #primary-menu .active h1,
+    .lte8 #primary-menu h1:hover,
     .lte8 #primary-menu li:hover {
       background-color: #ffffff;
     }
@@ -484,7 +484,7 @@ body {
     padding-top: 2em;
     text-align: center;
   }
-  
+
     #footer #footer-credits li {
       display: inline;
     }
@@ -516,7 +516,7 @@ body {
   margin: 2em 1.5% auto 3%;
   font-size: 1.125em;
 }
-  
+
   #secondary-menu ul {
     list-style-type: none;
     padding-left: 0px;
@@ -536,7 +536,7 @@ body {
   clear: right;
   margin: 2em 3% auto 1.5%;
 }
-  
+
   #page-primary img,
   .post img {
     border: solid #ffffff 8px;
@@ -581,7 +581,7 @@ body {
 .category-title {
   margin-top: 1em;
 }
-  
+
 #home-primary {
   width: 70.5%;
   clear: left;
@@ -617,7 +617,7 @@ body {
     font-style: italic;
     color: #452911;
   }
-  
+
     #mission p {
       font-size: 1em;
     }
@@ -643,7 +643,7 @@ body {
     position: absolute;
     top: 20px;
   }
-  
+
   .bucket .bucket-type {
     display: block;
     position: absolute;
@@ -706,7 +706,7 @@ body {
         border-bottom: 1px solid rgba(153, 164, 170, .65);
         font-weight: 600;
         font-size: .6em;
-        
+
       }
 
       #secondary-footer .bucket h1 {
@@ -762,7 +762,7 @@ body {
         font-size: 1em;
       }
 
-.post {  
+.post {
   margin-bottom: 2em;
 }
 
@@ -815,7 +815,7 @@ body {
         .post .post-footer .tags li:last-child:after {
           content: '';
         }
-  
+
     .post .post-footer .edit-link {
       border-left: solid 1px #99a4aa;
       padding-left: 0.5em;
@@ -842,6 +842,32 @@ body {
       display: none;
     }
 
+#donation-box {
+  float: right;
+  width: 29.3%;
+  margin-left: 1.5%;
+  padding: 1%;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+  #donation-box h1 {
+    font-size: 1.125em;
+  }
+
+  #donation-box p {
+    font-family: Georgia, 'Bitstream Charter', serif;
+  }
+
+  #donation-box .donate-button {
+    float: right;
+    clear: both;
+    font-style: normal;
+  }
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
 } /* media query: 1024 */
@@ -862,7 +888,7 @@ body {
     width: 55%;
   }
 
-  body.home #main #mission { 
+  body.home #main #mission {
     display: none;
   }
 
@@ -906,7 +932,7 @@ body {
     top: auto;
     width: 100%;
     margin-left: 0px;
-  }  
+  }
 
   #header .donate-menu {
     float: right;
@@ -994,11 +1020,27 @@ body {
   #footer .donate-menu {
     clear: left;
   }
-  
+
   #slider {
     border-width: 4px;
   }
+
+  #donation-box {
+    clear: both;
+    float: none;
+    display: block;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 60%;
+  }
 } /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+  #donation-box {
+    width: 75%;
+  }
+} /* media query: 480 */
 
 @media screen and (max-width: 320px) {
   #primary-menu .link-group {
@@ -1031,6 +1073,11 @@ body {
 
   #header .donate-menu {
   }
+
+  #donation-box {
+    width: 96%;
+    padding: 2%;
+  }
 } /* media query: 320 */
 
 /* 1200px and up */
@@ -1044,10 +1091,10 @@ body {
  * Copyright 2011, Gilbert Pellegrom
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * March 2010
  */
-  
+
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
@@ -1128,12 +1175,12 @@ body {
 
 /*
 Skin Name: LOH
-Skin URI: 
+Skin URI:
 Skin Type: flexible
 Description: Skin for LOH Neue theme, based on default nifo-slider theme
 Version: 1.0
-Author: 
-Author URI: 
+Author:
+Author URI:
 */
 
 .theme-loh .nivoSlider {
@@ -1187,7 +1234,7 @@ Author URI:
   .theme-loh .nivo-controlNav-loh a {
     margin-right: 0px;
   }
-  
+
 .theme-loh .nivo-controlNav a.active {
 	background-position:0 -22px;
 }

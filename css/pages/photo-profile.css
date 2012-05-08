@@ -1,0 +1,24 @@
+#profiles {
+  float: left;
+  width: 66%;
+}
+
+.profile {
+  overflow: auto;
+  margin-bottom: 2em;
+}
+
+.profile header {
+  position: relative;
+  width: 100%;
+}
+
+  .profile img {
+    float: left;
+    max-width: 40.6344086% !important;
+  }
+
+  .profile h1,
+  .profile .profile-description {
+    margin-left: 45.6344086%;
+  }

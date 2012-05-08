@@ -43,29 +43,13 @@
         font-family: Cantarell, sans-serif;
         text-transform: uppercase;
         font-size: 0.5em;
-      }      
+      }
 
       #project-content h2 {
         font-family: Cantarell, sans-serif;
         text-transform: uppercase;
         font-size: .875em;
       }
-
-  #donation-box {
-    float: right;
-    width: 29.3%;
-    margin-left: 1.5%;
-    padding: 1%;
-    border: 1px solid #ffffff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    font-style: italic;
-  }
-
-    #donation-box h1 {
-      font-size: 1.125em;
-    }
 
     #donation-box #progress-bar {
       position: relative;
@@ -115,21 +99,11 @@
       text-align: center;
     }
 
-    #donation-box p {
-      font-family: Georgia, 'Bitstream Charter', serif;
-    }
-
       body.lte7 #donation-box #progress-scale li { display: none; }
       body.lte7 #donation-box #progress-scale li:last-child { display: inline; float: right; }
 
       #donation-box #progress-scale li:first-child { text-align: left; }
       #donation-box #progress-scale li:last-child { text-align: right; }
-
-    #donation-box .donate-button {
-      float: right;
-      clear: both;
-      font-style: normal;
-    }
 
 #secondary-footer {
   position: relative;
@@ -221,16 +195,6 @@
     margin-right: 0;
   }
 
-  #donation-box {
-    clear: both;
-    float: none;
-    display: block;
-    overflow: auto;
-    margin: auto;
-    margin-bottom: 1em;
-    width: 60%;
-  }
-
   #secondary-footer .project {
     clear: right;
     float: right;
@@ -305,4 +269,4 @@
     width: 96%;
     padding: 2%;
   }
-} /* media query: 480 */
+} /* media query: 320 */

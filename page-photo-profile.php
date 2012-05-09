@@ -22,7 +22,7 @@
 	      <h1 class="page-title"><?php the_title(); ?></h1>
       </header>
 
-		  <?php remove_filter ('the_content',  'wpautop'); ?>
+		  <?php /*remove_filter ('the_content',  'wpautop');*/ ?>
       <?php the_content(); ?>
 	<?php endwhile; // end of the loop. ?>
 

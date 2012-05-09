@@ -22,3 +22,36 @@
   .profile .profile-description {
     margin-left: 45.6344086%;
   }
+
+@media screen and (max-width: 768px) {
+  .profile h1,
+  .profile .profile-description {
+    margin-left: 48.6344086%;
+  }
+} /* media scren max-width: 768; */
+
+@media screen and (max-width: 600px) {
+  #profiles {
+    width: 100%;
+  }
+} /* media query: 600 */
+
+@media screen and (max-width: 480px) {
+  .profile {
+    margin-bottom: 1em;
+  }
+
+  .profile img {
+    float: none;
+    display: block;
+    max-width: 100% !important;
+  }
+
+  .profile h1,
+  .profile .profile-description {
+    margin-left: 0;
+  }
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */

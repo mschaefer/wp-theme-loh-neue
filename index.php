@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+$page_js = array(get_stylesheet_directory_uri() . '/js/pages/sidebar.js');
+
 get_header();
 
 get_sidebar();

@@ -1,7 +1,9 @@
-<?php 
+<?php
 $body_class = 'single-post';
 
-get_header(); 
+$page_js = array(get_stylesheet_directory_uri() . '/js/pages/sidebar.js');
+
+get_header();
 ?>
 
 <?php get_sidebar(); ?>

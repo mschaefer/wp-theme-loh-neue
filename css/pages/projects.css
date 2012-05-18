@@ -3,6 +3,10 @@
   width: 98%;
 }
 
+  #slider {
+    width: 720px;
+  }
+
 #project-content {
   float: left;
   width: 62.6%;
@@ -65,7 +69,6 @@
         left: 0px;
         top: 0px;
         height: 100%;
-        width: 75%;
         background-color: #b51a16;
       }
 

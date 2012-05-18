@@ -1,11 +1,11 @@
 <?php
 /**
- * Template Name: Projects in Progress
+ * Template Name: Project in Progress
  * Description: the projects in progress page template
  *
  */
 ?>
-<?php 
+<?php
   $body_class = 'projects projects-in-progress';
   $page_css = array(get_stylesheet_directory_uri() . '/css/pages/projects.css');
   $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js',
@@ -27,7 +27,7 @@
 
   <div id="slider-container" class="slider-wrapper theme-loh">
     <div class="ribbon"></div>
-    <?php loh_projects_in_progress_slider(); ?>
+    <?php loh_project_in_progress_slider(); ?>
     <div id="slider" class="nivoSlider"></div>
   </div>
 

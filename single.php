@@ -3,10 +3,12 @@ $body_class = 'single-post';
 
 $page_js = array(get_stylesheet_directory_uri() . '/js/pages/sidebar.js');
 
-get_header();
-?>
+$page_css = array(get_stylesheet_directory_uri() . '/css/pages/sidebar.css');
 
-<?php get_sidebar(); ?>
+get_header();
+
+get_sidebar();
+?>
 
 <?php while ( have_posts() ) : the_post(); ?>
   <?php get_template_part( 'content', 'single' ); ?>

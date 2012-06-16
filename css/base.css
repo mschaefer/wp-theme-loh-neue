@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Cantarell);
-
 /*
   Palette
 
@@ -150,7 +148,7 @@ ul.donate-menu li {
 
 body {
   background-color: #ffffff;
-  font-family: Georgia, 'Bitstream Charter', serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
 }
 
 #content {
@@ -680,7 +678,7 @@ body {
 
   #secondary-footer h1 {
     font-size: 1.125em;
-    font-family: Georgia, 'Bitstream Charter', serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
   }
 
     #secondary-footer #sponsorship-bucket-1 {
@@ -859,7 +857,7 @@ body {
   }
 
   #donation-box p {
-    font-family: Georgia, 'Bitstream Charter', serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
   }
 
   #donation-box .donate-button {

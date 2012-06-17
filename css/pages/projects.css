@@ -44,13 +44,13 @@
 
       #project-content h1 .heading-category {
         display: block;
-        font-family: Cantarell, sans-serif;
+        font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
         text-transform: uppercase;
         font-size: 0.5em;
       }
 
       #project-content h2 {
-        font-family: Cantarell, sans-serif;
+        font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
         text-transform: uppercase;
         font-size: .875em;
       }
@@ -98,7 +98,7 @@
       color: #ffffff;
       font-size: .650em;
       font-style: normal;
-      font-family: Cantarell, sans-serif;
+      font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
       text-align: center;
     }
 
@@ -158,7 +158,7 @@
         #secondary-footer h2 .heading-category {
           display: block;
           margin-bottom: .35em;
-          font-family: Cantarell, sans-serif;
+          font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
           text-transform: uppercase;
           font-size: 0.5em;
         }
@@ -177,7 +177,7 @@
       top: 2em;
       width: auto;
       margin: auto;
-      font-family: Cantarell, sans-serif;
+      font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
       text-transform: uppercase;
     }
 

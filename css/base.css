@@ -119,32 +119,25 @@ ul.donate-menu li {
 
   .donate-menu a,
   a.donate-button {
-    background-color: #b51a16;
+
     padding: .25em .5em;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: Cantarell, sans-serif;
+    font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
     font-size: .875em;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #b51a16;
+
+    background-color: #b51a16;
+    background: #b51a16 -moz-linear-gradient(-75deg,  rgba(237,237,237,0.75) 0%, rgba(242,242,242,0) 9px, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: #b51a16 -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(237,237,237,0.75)), color-stop(9px,rgba(242,242,242,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: #b51a16 -webkit-linear-gradient(-75deg,  rgba(237,237,237,0.75) 0%,rgba(242,242,242,0) 9px,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: #b51a16 -o-linear-gradient(-75deg,  rgba(237,237,237,0.75) 0%,rgba(242,242,242,0) 9px,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: #b51a16 -ms-linear-gradient(-75deg,  rgba(237,237,237,0.75) 0%,rgba(242,242,242,0) 9px,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: #b51a16 linear-gradient(-75deg,  rgba(237,237,237,0.75) 0%,rgba(242,242,242,0) 9px,rgba(255,255,255,0) 100%); /* W3C */
   }
-
-    .donate-menu a:hover,
-    a.donate-button:hover {
-      position: relative;
-      left: -1px;
-      top: -1px;
-      text-decoration: none;
-      background-color: #b51a16;
-      -moz-box-shadow: 2px 2px 5px -1px #888;
-      -webkit-box-shadow: 2px 2px 5px -1px #888;
-      box-shadow: 2px 2px 5px -1px #888;
-    }
-
-      #primary-menu .donate-menu a:hover {
-        background-color: #b51a16;
-      }
 
 body {
   background-color: #ffffff;
@@ -424,7 +417,7 @@ body {
   color: #ffffff;
   background-color: #43311d;
    background-image: url(images/footer-background.jpg);
-  font-family: Cantarell, sans-serif;
+  font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
 }
 
   #footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
@@ -591,7 +584,7 @@ body {
   #home-primary li,
   #page-primary p,
   #page-primary li {
-    font-family: Cantarell, sans-serif;
+    font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
   }
 
   #home-primary #home-content {
@@ -660,7 +653,7 @@ body {
   color: #ffffff;
   background-color: #573c1f;
   background-image: url(images/secondary-footer-background.jpg);
-  font-family: Cantarell, sans-serif;
+  font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
 }
 
   #secondary-footer > * {
@@ -765,7 +758,7 @@ body {
 }
 
   .post .post-header .post-category {
-    font-family: Cantarell, sans-serif;
+    font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
     text-transform: uppercase;
     font-size: 0.875em;
   }

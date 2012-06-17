@@ -1,0 +1,8 @@
+#sidebar-archives li {
+  list-style-type: none;
+  margin-left: .5em;
+}
+
+#sidebar-archives .year > a:hover {
+  cursor: pointer;
+}

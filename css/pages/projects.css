@@ -3,6 +3,10 @@
   width: 98%;
 }
 
+  #slider {
+    width: 720px;
+  }
+
 #project-content {
   float: left;
   width: 62.6%;
@@ -40,32 +44,16 @@
 
       #project-content h1 .heading-category {
         display: block;
-        font-family: Cantarell, sans-serif;
+        font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
         text-transform: uppercase;
         font-size: 0.5em;
-      }      
+      }
 
       #project-content h2 {
-        font-family: Cantarell, sans-serif;
+        font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
         text-transform: uppercase;
         font-size: .875em;
       }
-
-  #donation-box {
-    float: right;
-    width: 29.3%;
-    margin-left: 1.5%;
-    padding: 1%;
-    border: 1px solid #ffffff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    font-style: italic;
-  }
-
-    #donation-box h1 {
-      font-size: 1.125em;
-    }
 
     #donation-box #progress-bar {
       position: relative;
@@ -81,7 +69,6 @@
         left: 0px;
         top: 0px;
         height: 100%;
-        width: 75%;
         background-color: #b51a16;
       }
 
@@ -111,12 +98,8 @@
       color: #ffffff;
       font-size: .650em;
       font-style: normal;
-      font-family: Cantarell, sans-serif;
+      font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
       text-align: center;
-    }
-
-    #donation-box p {
-      font-family: Georgia, 'Bitstream Charter', serif;
     }
 
       body.lte7 #donation-box #progress-scale li { display: none; }
@@ -124,12 +107,6 @@
 
       #donation-box #progress-scale li:first-child { text-align: left; }
       #donation-box #progress-scale li:last-child { text-align: right; }
-
-    #donation-box .donate-button {
-      float: right;
-      clear: both;
-      font-style: normal;
-    }
 
 #secondary-footer {
   position: relative;
@@ -167,7 +144,7 @@
     }
 
       #secondary-footer h2 {
-        font-family: Georgia, 'Bitstream Charter', serif;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
         margin-bottom: .35em;
       }
 
@@ -181,7 +158,7 @@
         #secondary-footer h2 .heading-category {
           display: block;
           margin-bottom: .35em;
-          font-family: Cantarell, sans-serif;
+          font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
           text-transform: uppercase;
           font-size: 0.5em;
         }
@@ -200,7 +177,7 @@
       top: 2em;
       width: auto;
       margin: auto;
-      font-family: Cantarell, sans-serif;
+      font-family: Arial, Helvetica, 'Nimbus Sans', sans-serif;
       text-transform: uppercase;
     }
 
@@ -219,16 +196,6 @@
   #project-content {
     width: 100%;
     margin-right: 0;
-  }
-
-  #donation-box {
-    clear: both;
-    float: none;
-    display: block;
-    overflow: auto;
-    margin: auto;
-    margin-bottom: 1em;
-    width: 60%;
   }
 
   #secondary-footer .project {
@@ -305,4 +272,4 @@
     width: 96%;
     padding: 2%;
   }
-} /* media query: 480 */
+} /* media query: 320 */

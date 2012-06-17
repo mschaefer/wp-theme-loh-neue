@@ -32,7 +32,7 @@ body.donate .column_right {
 
     body.donate .bucket h1 {
       font-size: 1.125em;
-      font-family: Georgia, 'Bitstream Charter', serif;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
     }
 
       body.donate .bucket p:first-child {
@@ -118,7 +118,7 @@ body.donate .column_right {
       clear: left;
       margin-left: 0px;
     }
-    
+
     .bucket p:first-child {
       position: static;
       float: left;
@@ -132,7 +132,7 @@ body.donate .column_right {
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
-  
+
 } /* media query: 320 */
 
 /* 1200px and up */

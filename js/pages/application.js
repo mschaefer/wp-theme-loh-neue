@@ -1,4 +1,4 @@
-jQuery.fn.hasAttr = function(name) {  
+jQuery.fn.hasAttr = function(name) {
    return (this.attr(name) !== undefined && this.attr(name) !== false);
 };
 
@@ -15,4 +15,8 @@ jQuery(function($) {
   $('#primary-menu .link-group').hover(primary_menu_in, primary_menu_out);
 
   $('#primary-menu .link-group:has(ul)').addClass('has-submenu');
+
+  $('#search').hover(function() {
+    $('#s').addClass('js-expanded');
+  });
 });

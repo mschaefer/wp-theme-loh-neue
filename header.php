@@ -1,7 +1,7 @@
 <?
   global $content_class;
   global $body_class;
-  
+
   if(!isset($content_class)) $content_class = '';
   if(!isset($body_class)) $body_class = '';
 
@@ -54,6 +54,8 @@
       <nav id="social-menu">
         <?php loh_social_menu('horiz-menu'); ?>
       </nav>
+
+      <?php get_search_form(); ?>
 <!--
       <form id="subscribe" action="#" method="post">
         <input type="email" placeholder="email address" />
@@ -67,4 +69,4 @@
       <?php loh_donate_button_menu(); ?>
     </div> <!-- #header -->
     <div id="main">
-<!-- end: header --> 
+<!-- end: header -->

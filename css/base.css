@@ -210,11 +210,46 @@ body {
     text-indent: -9999px;
     overflow: hidden;
   }
-/*
-  #header #subscribe {
+
+  #header #search {
     float: right;
+    vertical-align: bottom;
+    margin-top: .25em;
   }
-*/
+
+    #header #search #search-container {
+      display: inline-block;
+      width: 12em;
+      overflow: auto;
+    }
+
+    #header #search #s {
+      float: right;
+      width: 50%;
+      font-size: .75em;
+      padding: .2em;
+      color: #bfbfbf;
+      border: 1px solid #bfbfbf;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+      #header #search #s.js-expanded {
+        width: 95%;
+        color: #000000;
+        transition: width .225s;
+        -moz-transition: width .225s; /* Firefox 4 */
+        -webkit-transition: width .225s; /* Safari and Chrome */
+        -o-transition: width .225s; /* Opera */
+      }
+
+    #header #search #search-submit {
+      position: relative;
+      top: -.25em;
+      height: 1.25em;
+    }
+
   #header .horiz-menu li {
     display: inline;
   }
@@ -915,6 +950,10 @@ body {
     height: 60px;
   }
 
+  #header #search {
+    /* drop it to the next line */
+  }
+
   #header #primary-menu {
     position: static;
     float: left;
@@ -1034,6 +1073,12 @@ body {
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
+  #header #search {
+    /* width should be based on % of entire page */
+    /* default: hide text input; on click, show and expand */
+    /* break out of layout so we can slide input over the logo */
+  }
+
   #primary-menu .link-group {
     width: 100%;
     clear: left;

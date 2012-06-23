@@ -951,7 +951,8 @@ body {
   }
 
   #header #search {
-    /* drop it to the next line */
+    clear: right;
+    margin-bottom: .5em;
   }
 
   #header #primary-menu {
@@ -1074,9 +1075,27 @@ body {
 
 @media screen and (max-width: 320px) {
   #header #search {
-    /* width should be based on % of entire page */
-    /* default: hide text input; on click, show and expand */
-    /* break out of layout so we can slide input over the logo */
+    position: absolute;
+    right: 3%;
+    left: 3%;
+    top: -22px;
+  }
+
+  #header #search #search-container {
+    width: 92.5%;
+  }
+
+  #header #search #s {
+    width: 29.5%;
+  }
+
+  #header #search #search-submit {
+    float: right;
+    top: 0;
+  }
+
+  #header #social-menu {
+    margin-top: 0.25em;
   }
 
   #primary-menu .link-group {

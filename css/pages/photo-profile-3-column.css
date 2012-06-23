@@ -1,0 +1,44 @@
+#profiles {
+  overflow: auto;
+}
+
+#profiles > div {
+  float: left;
+  width: 33.333333%;
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+#profiles > div > img {
+  width: 33%;
+  float: left;
+}
+
+#profiles > div > p {
+  padding-left: 3%;
+  width: 55%;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  #profiles > div {
+    width: 50%;
+  }
+} /* media scren max-width: 768; */
+
+@media screen and (max-width: 400px) {
+  #profiles > div {
+    width: 100%;
+  }
+
+  #profiles > div:nth-child(2n) > img {
+    float: right;
+  }
+
+  #profiles > div:nth-child(2n) > p {
+    float: right;
+    text-align: right;
+    padding-left: 0%;
+    padding-right: 3%;
+  }
+} /* media query: 600 */

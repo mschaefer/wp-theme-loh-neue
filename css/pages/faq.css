@@ -1,0 +1,42 @@
+#page-primary {
+  position: relative;
+}
+
+.faq #page-primary p,
+.faq #page-primary ul,
+.faq #page-primary ol {
+  padding-left: 5em;
+}
+
+.faq p:before {
+  position: absolute;
+  left: 0;
+  font-size: 2.5em;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', serif;
+  color: #8f8f8f;
+}
+
+.faq .faq-question {
+  font-style: italic;
+  margin-top: 1.5em;
+}
+
+.faq .faq-question:before {
+  content: 'Q';
+}
+
+.faq .faq-question + p {
+  margin-top: 2.25em;
+}
+
+.faq .faq-question + p:before {
+  content: 'A';
+}
+
+@media screen and (max-width: 480px) {
+  .faq #page-primary p,
+  .faq #page-primary ul,
+  .faq #page-primary ol {
+    padding-left: 2.5em;
+  }
+}

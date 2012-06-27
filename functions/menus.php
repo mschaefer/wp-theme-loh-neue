@@ -25,12 +25,12 @@ function loh_page_children_menu($id, $disable_link_to_page_id = -1) {
  */
 function page_menu($page_id) {
   $root_page_id = root_page_id_for($page_id);
- 
+
   echo loh_page_children_menu($root_page_id, $page_id);
 }
 
 add_action('init', 'loh_register_custom_menus');
- 
+
 function loh_register_custom_menus() {
   register_nav_menu('donate_button_menu', __('LOH Donate Button'));
   register_nav_menu('primary_nav_menu', __('LOH Primary Navigation Menu'));
@@ -67,12 +67,12 @@ function loh_social_menu($ul_class = '') {
 
   $menu_items = loh_menu_items('social_nav_menu');
 
-  $class_map = array( "/facebook.com/" => 'facebook', 
+  $class_map = array( "/facebook.com/" => 'facebook',
                       "/youtube.com/" => 'youtube',
                       "/flickr.com/" => 'flickr',
                       "/twitter.com/" => 'twitter' );
 
-  foreach($menu_items as $item) {  
+  foreach($menu_items as $item) {
     $a_class = '';
     foreach($class_map as $reg => $class) {
       if( preg_match($reg, $item->url) > 0 ) {
@@ -83,7 +83,7 @@ function loh_social_menu($ul_class = '') {
 
     $ul .= "<li><a href=\"$item->url\" class=\"social-$a_class\">$item->title</a></li>\n";
   }
-  
+
   echo $ul . "</ul>";
 }
 
@@ -138,12 +138,12 @@ class Loh_Menu_Helper {
  */
 class Loh_Menu_Walker extends Walker_Nav_Menu {
   var $element_count = 0;
-  
+
 	function start_lvl(&$out, $depth) {
 		$indent = str_repeat("  ", $depth);
 
     if($depth == 0) {
-  		$out .= "\n$indent<ul>";
+  		$out .= "\n$indent<span class=\"menu-accoutrement\"></span><ul>";
     }
 	}
 

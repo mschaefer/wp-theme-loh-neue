@@ -366,12 +366,12 @@ body {
         left: .25em;
         position: absolute;
         top: 1.75em;
-        top: -moz-calc(2em - 5px);
-        top: -webkit-calc(2em - 5px);
-        top: calc(2em - 5px);
+        top: -moz-calc(2em - 4px);
+        top: -webkit-calc(2em - 4px);
+        top: calc(2em - 4px);
         background-image: url(images/menu-accountrements.png);
         background-position: 0 5px ;
-        visibility: none;
+        visibility: hidden;
         opacity: 0;
       }
 

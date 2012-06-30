@@ -656,6 +656,28 @@ body {
     border-bottom: 1px solid rgba(153, 164, 170, .65);
   }
 
+  #home-primary #events {
+    float: left;
+    margin-left: 5%;
+    width: 34.33%;
+  }
+
+    #home-primary #events h2 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    #home-primary #events #calendar-link {
+      display: block;
+      width: 150px;
+      margin: auto;
+      height: 168px;
+      text-indent: -9999px;
+      background-image: url(images/calendar.png);
+      background-repeat: no-repeat;
+    }
+
   #mission {
     padding-top: 150px;
     float: left;
@@ -1039,10 +1061,6 @@ body {
     margin-top: .5em;
   }
 
-  #home-primary #home-content {
-    width: 100%;
-  }
-
   #secondary-footer #sponsorship-bucket-1 {
     margin-left: 0;
     margin-right: 0;
@@ -1092,6 +1110,21 @@ body {
 @media screen and (max-width: 480px) {
   #donation-box {
     width: 75%;
+  }
+
+  #home-primary #home-content,
+  #home-primary #events {
+    width: 100%;
+  }
+
+  #home-primary #events {
+    margin-left: 0;
+  }
+
+  #home-primary #events h2 {
+    margin-left: 0;
+    text-align: left;
+
   }
 } /* media query: 480 */
 

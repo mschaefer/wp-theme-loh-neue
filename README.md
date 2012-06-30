@@ -11,12 +11,13 @@ This theme is designed to have a static home page. Use the Home Page template wh
 The home page has two custom fields for additional content:
 blog-feed-url: the url to the blog home page
 mission: the text that appears under the site logo
+calendar-of-events-url: url of the calendar of events page
 
 ### Home Page Slider
 
 Each item in the image slider on the home page is populated by creating a WP page to represent that item. These slider item pages must have page names in the following format: "Home Page: Slider N" where N is a number (1,2,3, etc.). Images will be added to the slider in an order based on their respective page names.
 
-These image pages need to have content in a particular format: 
+These image pages need to have content in a particular format:
 
    <a><img></a><* .caption></*>
 
@@ -51,7 +52,7 @@ It is assumed that this menu will contain a single item — a single link to the
 ### Footer Menu (LOH Footer Menu)
 
 A link to the home page behaves the same in this menu as it does in the primary navigation menu. See documentation for that menu.
-    
+
 ## Footer
 
 This contains a WordPress dynamic sidebar called Footer Credits. It also contains a Hidden Scripts sidebar that allows you to add any JS you want at the end of each page.

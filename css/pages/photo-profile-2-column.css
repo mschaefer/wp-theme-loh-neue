@@ -19,6 +19,10 @@
   float: left;
 }
 
+#profiles > div > a > img {
+  width: 100%;
+}
+
 #profiles > div > p,
 #profiles > div > h2 {
   padding-right: 5%;

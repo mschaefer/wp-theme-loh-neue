@@ -670,9 +670,9 @@ body {
 
     #home-primary #events #calendar-link {
       display: block;
-      width: 150px;
+      width: 100px;
       margin: auto;
-      height: 168px;
+      height: 118px;
       text-indent: -9999px;
       background-image: url(images/calendar.png);
       background-repeat: no-repeat;

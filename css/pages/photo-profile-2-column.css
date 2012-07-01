@@ -19,9 +19,10 @@
   float: left;
 }
 
-#profiles > div > a > img {
-  width: 100%;
-}
+  #profiles > div > a {
+    display: block;
+    min-height: 100px;
+  }
 
 #profiles > div > p,
 #profiles > div > h2 {
@@ -51,5 +52,9 @@
     clear: both;
     width: 100%;
     padding-right: 0;
+  }
+
+  #profiles > div > a {
+    min-height: 0;
   }
 } /* media query: 320 */

@@ -26,7 +26,6 @@
   </section>
 
   <section id="events">
-    <h2>Calendar of Events</h2>
     <a href="<?php echo loh_custom_field(get_the_ID(), 'calendar-of-events-url'); ?>" id="calendar-link">Calendar of Events</a>
   </section>
 

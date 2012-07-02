@@ -25,11 +25,23 @@
   }
 
 #profiles > div > p,
-#profiles > div > h2 {
+#profiles > div > h2,
+#profiles > div > h3,
+#profiles > div > ol,
+#profiles > div > ul {
   padding-right: 5%;
   width: 65%;
   float: right;
 }
+
+#profiles > div > ol,
+#profiles > div > ul {
+  padding-left: 0;
+}
+
+  #profiles li {
+    margin-left: 1em;
+  }
 
 @media screen and (max-width: 768px) {
   #profiles > div {

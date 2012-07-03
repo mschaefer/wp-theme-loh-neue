@@ -4,10 +4,10 @@ add_shortcode("about-us-mission", "loh_shortcode_about_us_mission");
 add_shortcode("about-us-meet-the-girls", "loh_shortcode_about_us_meet_the_girls");
 
 function loh_shortcode_about_us_mission() {
-  return '<aside id="about-us-mission">' . 
+  return '<div id="about-us-mission">' .
     '<header><h1>' . loh_custom_field(get_the_ID(), 'about-us-mission-title', 'Our Mission') . '</h1></header>' .
     loh_custom_field(get_the_ID(), 'about-us-mission-content') .
-  '</aside>';
+  '</div>';
 }
 
 function loh_shortcode_about_us_meet_the_girls() {

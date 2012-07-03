@@ -1,0 +1,5 @@
+Icons created with the GIMP
+
+To achieve correct featuring. Add outline of icon layer, select with 3 px feather, and anti-aliasing enabled. Fill with red texture map.
+
+Select the icon again, grown the selection by 3 pixels, fill with #ffffff. Move layer under red textured icon and change layer type to "Grain merge"

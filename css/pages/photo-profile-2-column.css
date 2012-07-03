@@ -1,0 +1,72 @@
+#profiles {
+  overflow: auto;
+}
+
+#profiles > div {
+  float: left;
+  width: 50%;
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+  #profiles > div:nth-child(2n + 1) {
+    clear: left;
+  }
+
+#profiles > div > img,
+#profiles > div > a {
+  width: 22.2217778%;
+  float: left;
+}
+
+  #profiles > div > a {
+    display: block;
+    min-height: 100px;
+  }
+
+#profiles > div > p,
+#profiles > div > h2,
+#profiles > div > h3,
+#profiles > div > ol,
+#profiles > div > ul {
+  padding-right: 5%;
+  width: 65%;
+  float: right;
+}
+
+#profiles > div > ol,
+#profiles > div > ul {
+  padding-left: 0;
+}
+
+  #profiles li {
+    margin-left: 1em;
+  }
+
+@media screen and (max-width: 768px) {
+  #profiles > div {
+    width: 50%;
+  }
+} /* media scren max-width: 768; */
+
+@media screen and (max-width: 480px) {
+  #profiles > div {
+    width: 100%;
+  }
+} /* media query: 480 */
+
+@media screen and (max-width: 320px) {
+  #profiles > div {
+    width: 100%;
+  }
+
+  #profiles > div > p {
+    clear: both;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #profiles > div > a {
+    min-height: 0;
+  }
+} /* media query: 320 */

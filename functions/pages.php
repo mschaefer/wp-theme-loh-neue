@@ -6,7 +6,12 @@ function loh_blog_feed() {
   foreach( $recent_posts as $r ){
     $items .= '<li><a href="' . get_permalink($r["ID"]) . '" title="'.esc_attr($r["post_title"]).'" >' . $r["post_title"].'</a>';
     $items .= ' &mdash; <time datetime="' . $r['post_date'] . '">' . date('l, F j, Y', strtotime($r["post_date"])) . '</time>';
-    $items .= '<p>'.$r["post_excerpt"].'</p></li>';
+
+    if(strlen($r["post_excerpt"]) > 0) {
+      $items .= '<p>'.$r["post_excerpt"].'</p>';
+    }
+
+    $items .= '</li>';
   }
 
   return "<ul>$items</ul>";

@@ -5,12 +5,12 @@
  *
  */
 ?>
-<?php 
+<?php
   $body_class = 'home';
   $page_js = array(get_stylesheet_directory_uri() . '/js/nivo-slider/jquery.nivo.slider.pack.js',
-                   get_stylesheet_directory_uri() . '/js/components/slider.js', 
+                   get_stylesheet_directory_uri() . '/js/components/slider.js',
                    get_stylesheet_directory_uri() . '/js/pages/home.js' );
-  get_header(); 
+  get_header();
 ?>
 <section id="home-primary">
   <div id="slider-container" class="slider-wrapper theme-loh">
@@ -23,6 +23,10 @@
   <?php while ( have_posts() ) : the_post(); ?>
 	  <?php the_content(); ?>
   <?php endwhile; // end of the loop. ?>
+  </section>
+
+  <section id="events">
+    <a href="<?php echo loh_custom_field(get_the_ID(), 'calendar-of-events-url'); ?>" id="calendar-link">Calendar of Events</a>
   </section>
 
 </section>
@@ -47,6 +51,6 @@
     </header>
     <?php echo loh_blog_feed(); ?>
   </aside>
-</div> <!-- home-footer --> 
+</div> <!-- home-footer -->
 
 <?php get_footer(); ?>
